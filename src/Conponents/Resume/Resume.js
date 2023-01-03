@@ -21,7 +21,7 @@ const Resume = () => {
                 <h2>Diploma engineering (CSE)</h2>
                 <h4>Bangladesh Technical Education Board (BTEB)</h4>
                 <h5>Result : pending</h5>
-                <p>I completed Secondary School Certificate from Katirhat High School. I was a student of commerce background. I completed SSC in 2010.</p>
+                <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas quo distinctio corrupti incidunt a quam repellendus laboriosam quia dolorum illo laborum inventore, laudantium cupiditate eum ea ullam? Similique, quibusdam nam! </p>
               </div>
             </div>
             <div className="row">
@@ -32,7 +32,7 @@ const Resume = () => {
                 <h2>Secondary School Certificate (SSC)</h2>
                 <h4>Board of Intermediate & Secondary Education, Chattogram</h4>
                 <h5>Result : 4.28</h5>
-                <p>I completed Secondary School Certificate from Katirhat High School. I was a student of commerce background. I completed SSC in 2010.</p>
+                <p>I completed Secondary School Certificate from Mohammad Ilias Mia Chy: High School. I was a student of Science background. I completed SSC in 2019.</p>
               </div>
             </div>
             
@@ -82,11 +82,11 @@ const Resume = () => {
               <h4>JAVASCRIPT</h4>
              </div>
              <div className="item">
-              <CircularProgressbar value={60} text={`60%`} className='icon'/>
+              <CircularProgressbar value={80} text={`80%`} className='icon'/>
               <h4>REACT JS</h4>
              </div>
              <div className="item">
-              <CircularProgressbar value={60} text={`60%`} className='icon'/>
+              <CircularProgressbar value={70} text={`60%`} className='icon'/>
               <h4>NODE JS</h4>
              </div>
              <div className="item">
@@ -98,11 +98,11 @@ const Resume = () => {
               <h4>MONGODB</h4>
              </div>
              <div className="item">
-              <CircularProgressbar value={50} text={`50%`} className='icon'/>
+              <CircularProgressbar value={70} text={`70%`} className='icon'/>
               <h4>GIT</h4>
              </div>
              <div className="item">
-              <CircularProgressbar value={50} text={`50%`} className='icon'/>
+              <CircularProgressbar value={60} text={`60%`} className='icon'/>
               <h4>TAILWINCSS</h4>
              </div>
              <div className="item">
@@ -118,11 +118,11 @@ const Resume = () => {
               <h4>PHYTHON</h4>
              </div>
              <div className="item">
-              <CircularProgressbar value={40} text={`40%`} className='icon'/>
+              <CircularProgressbar value={30} text={`30%`} className='icon'/>
               <h4>JAVA</h4>
              </div>
              <div className="item">
-              <CircularProgressbar value={35} text={`35%`} className='icon'/>
+              <CircularProgressbar value={30} text={`30%`} className='icon'/>
               <h4>C#</h4>
              </div>
              <div className="item">

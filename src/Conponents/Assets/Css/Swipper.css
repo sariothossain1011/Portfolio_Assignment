@@ -31,8 +31,8 @@
   }
   .main{
     margin: auto;
-    background: rgb(237, 228, 228);
-    color:black;
+    background: black;
+    color:rgb(237, 228, 228);
     border-radius: 20px;
     position: relative;
   }

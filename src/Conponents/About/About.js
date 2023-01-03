@@ -3,8 +3,9 @@ import WebDesign from '../Assets/Image/webdesign.png'
 import WebDevelopment from '../Assets/Image/webdevelopment.png'
 import UixiDesign from '../Assets/Image/uixidesign.png'
 import SeoMarketing from '../Assets/Image/seomarketing.png'
-import Profile from '../Assets/Image/profile.jpg'
-
+import Review1 from '../Assets/Image/client1.jpg'
+import Review2 from '../Assets/Image/client2.jpg'
+import Review3 from '../Assets/Image/client3.webp'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
 import "swiper/css";
@@ -19,12 +20,12 @@ const About = () => {
         <h1>ABOUT <span>ME</span></h1>
         <div className="col-md-8 pt-5 about_left">
           <h2>I'm Sariot hossain, A Full Stack Web Developer!</h2>
-          <p>I am able to solve complex logic or other tasks related to web development. I have a perfect understanding of how JavaScript, HTML, and CSS work. I have a lot of experience working with up-to-date technologies especially React JS. I have powerful knowledge HTML, CSS, SCSS, Bootstrap, Tailwind CSS, JavaScript ES6, TypeScript, ReactJS, Redux, NodeJS, NPM, ExpressJS, MongoDB, PostMan, Webpack, Firebase, Figma, XD, PhotoShop, Illustrator, Linux OS.</p>
+          <p>I am able to solve complex logic or other tasks related to web development. I have a perfect understanding of how JavaScript, HTML, and CSS work. I have a lot of experience working with up-to-date technologies especially React JS. I have powerful knowledge HTML, CSS, Bootstrap, Tailwind CSS, JavaScript ES6, ReactJS, Redux, NodeJS, NPM, ExpressJS, MongoDB, PostMan, Figma.</p>
 
           <p>My favorite in this programming sector is to fix any Errors. Because in every error there is hope to learn something new. I won't quit until I can fix the error. In this programming life, I have tried to solve all kinds of problems and have succeeded. My policy is to stick with it until the problem is solved.</p>
         </div>
         <div className="col-md-4 pt-5 parsonal-info">
-          <h6>Name : Sariot hossain sumon</h6>
+          <h6>Name : Sariot hossain (sumon)</h6>
           <h6>Email : sariothossain1011@gmail.com</h6>
           <h6>Age : {(new Date().getFullYear() )- 2003}</h6>
           <h6>Nationality : Bangladesh</h6>
@@ -44,7 +45,7 @@ const About = () => {
                 </div>
                 <div className="col-md-10">
                 <p>Web Design</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi expedita hic maiores numquam laboriosam accusamus nulla in possimus. Expedita iure quod blanditiis, nihil esse</p>
+                <p>I use design programs to create visual elements. Website designers usually have expertise in UI, or user interface, which means I strategically design a site that's intuitive and easy for visitors to navigate.</p>
                 </div>
               </div>
             </div>
@@ -55,7 +56,7 @@ const About = () => {
                 </div>
                 <div className="col-md-10">
                 <p>Web Development</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi expedita hic maiores numquam laboriosam accusamus nulla in possimus. Expedita iure quod blanditiis, nihil esse</p>
+                <p>Web developers create and maintain websites. I am also responsible for the site's technical aspects, such as its performance and capacity, which are measures of a website's speed and how much traffic the site can handle.</p>
                 </div>
               </div>
             </div>
@@ -66,7 +67,7 @@ const About = () => {
                 </div>
                 <div className="col-md-10">
                 <p>Uixi Design</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi expedita hic maiores numquam laboriosam accusamus nulla in possimus. Expedita iure quod blanditiis, nihil esse</p>
+                <p>LA UI, UX, and front-end web developer is responsible for applying interactive and visual design principles on websites and web applications for a positive and cohesive user experience. These developers use HTML, CSS, and other design tools to achieve responsive designs.</p>
                 </div>
               </div>
             </div>
@@ -77,12 +78,10 @@ const About = () => {
                 </div>
                 <div className="col-md-10">
                 <p>SEO Marketing</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi expedita hic maiores numquam laboriosam accusamus nulla in possimus. Expedita iure quod blanditiis, nihil esse</p>
+                <p>Search engine optimization is the complete form of SEO. I have three years of experience in Search Engine Optimization. I am well versed in OnPage SEO, Off Page SEO and Email Marketing.</p>
                 </div>
               </div>
             </div>
-          
-            
           </div>
         </div>      
        </div>
@@ -100,9 +99,9 @@ const About = () => {
           <div className="row ">
             <div className="col-md-10 main">
             <div className="col-12 ">
-              <div className="row pt-2">
+              <div className="row pt-3">
                 <div className="col-md-4 clientImg">
-                <img src={Profile} alt="" />
+                <img src={Review1} alt="" />
                 </div>
                 <div className="col-md-8 clientInfo">
                 <h2>sariot hossain</h2>
@@ -110,7 +109,7 @@ const About = () => {
                 </div>
               </div>
               <div className="col-10 clientComment">
-                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero est eligendi itaque ut reprehenderit sapiente, veniam officia dolores inventore exercitationem vitae doloremque temporibus, blanditiis quas iusto neque iure accusamus. Id, porro voluptate?</span>
+                <span>It has been a pleasure working with Sariot. I appreciate your dedication to the projects that you and your team are on. It is nice from the customers stand point to be able to get in touch with you and your team and you guys always made yourselves available. You did a great job for us and I would recommend you to anyone.</span>
                 <div className="icons">
                 <span><AiFillStar /></span>
                 <span><AiFillStar /></span>
@@ -127,17 +126,17 @@ const About = () => {
           <div className="row ">
             <div className="col-md-10 main">
             <div className="col-12 ">
-              <div className="row pt-2">
+              <div className="row pt-3">
                 <div className="col-md-4 clientImg">
-                <img src={Profile} alt="" />
+                <img src={Review2} alt="" />
                 </div>
                 <div className="col-md-8 clientInfo">
-                <h2>sariot hossain</h2>
-                <span>Web Design</span>
+                <h2>David Sandford</h2>
+                <span>VC, Eurosport Corporate</span>
                 </div>
               </div>
               <div className="col-10 clientComment">
-                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero est eligendi itaque ut reprehenderit sapiente, veniam officia dolores inventore exercitationem vitae doloremque temporibus, blanditiis quas iusto neque iure accusamus. Id, porro voluptate?</span>
+                <span>We utilized Warren’s Project Management skills to oversee the smooth transition of our merger with Yahoo Sport. Our consumers gave us such positive feedback, we later returned to Warren, this time to design a new landing page for our corporate website. The results yet again were outstanding.</span>
                 <div className="icons">
                 <span><AiFillStar /></span>
                 <span><AiFillStar /></span>
@@ -154,17 +153,17 @@ const About = () => {
           <div className="row ">
             <div className="col-md-10 main">
             <div className="col-12 ">
-              <div className="row pt-2">
+              <div className="row pt-3">
                 <div className="col-md-4 clientImg">
-                <img src={Profile} alt="" />
+                <img src={Review3} alt="" />
                 </div>
                 <div className="col-md-8 clientInfo">
-                <h2>sariot hossain</h2>
-                <span>Web Design</span>
+                <h2>Samuel Darby</h2>
+                <span>Geo-Systems USA</span>
                 </div>
               </div>
               <div className="col-10 clientComment">
-                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero est eligendi itaque ut reprehenderit sapiente, veniam officia dolores inventore exercitationem vitae doloremque temporibus, blanditiis quas iusto neque iure accusamus. Id, porro voluptate?</span>
+                <span>It has been a pleasure working with Sariot. I appreciate your dedication to the projects that you and your team are on. It is nice from the customers stand point to be able to get in touch with you and your team and you guys always made yourselves available. You did a great job for us and I would recommend you to anyone.</span>
                 <div className="icons">
                 <span><AiFillStar /></span>
                 <span><AiFillStar /></span>
