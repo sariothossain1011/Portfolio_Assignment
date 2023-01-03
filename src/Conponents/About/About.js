@@ -104,8 +104,8 @@ const About = () => {
                 <img src={Review1} alt="" />
                 </div>
                 <div className="col-md-8 clientInfo">
-                <h2>sariot hossain</h2>
-                <span>Web Design</span>
+                <h2>Fawzia Nasrin</h2>
+                <span>Web Developer</span>
                 </div>
               </div>
               <div className="col-10 clientComment">
