@@ -1,11 +1,60 @@
-import React from 'react'
-
+import React, { useEffect ,useState } from 'react'
+import { GetBlog } from '../../ApiServices/ApiService'
+import { FaRegComment } from "react-icons/fa";
+import { AiOutlineEye } from "react-icons/ai";
+import FullScrenLoder from '../Common/FullScreenLoder';
 const Blogs = () => {
-  return (
-    <div className='main-body'>
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste quibusdamdolor exercitationem praesentium sint quis hic, dolorem impedit eaque maxime voluptas mollitia, error ipsam! Itaque magnam veritatis, reprehenderit explicabo repellat a delectus quae sequi animi aliquam eligendi similique maxime corporis. Ducimus adipisci incidunt placeat, aperiam esse voluptatem quisquam perspiciatis! Expedita laudantium animi quis ut dolor facere voluptatibus hic et, consequuntur cumque natus, tempora provident? Reiciendis, nobis. Minus asperiores eaque quo reprehenderit exercitationem voluptates obcaecati iste sapiente doloribus molestias, voluptatem, dolor temporibus fugit ipsa. Deleniti aspernatur commodi quo ullam mollitia inventore odio accusamus quam. Corrupti vero culpa unde nam, molestias numquam facere autem aliquam rerum architecto fugit reiciendis porro aliquid consectetur, sint expedita optio voluptatem. Mollitia cum deserunt fuga illo quis! Quibusdam quaerat temporibus aliquid, quos fugit facilis asperiores doloremque architecto autem sit aspernatur et iusto amet eveniet eius sed reprehenderit fugiat? Fugiat tempora in perspiciatis vel magni expedita maxime distinctio repellendus dolores quos, ab nesciunt libero fuga reprehenderit exercitationem, dignissimos quibusdam mollitia? Nulla veniam at eaque modi odio inventore perspiciatis fugit enim! Corrupti nobis quas perspiciatis! Sit nam excepturi earum expedita ducimus et nobis, molestias consequatur sint necessitatibus dolores ad ipsum voluptas in velit ipsa assumenda illo? Sapiente, pariatur ipsa, ea veritatis est autem animi, at magnam mollitia repellat nulla eligendi debitis molestias totam perspiciatis maiores officia ex? Inventore aut culpa beatae recusandae itaque assumenda illum dolores praesentium quo neque expedita nesciunt, dolorum, ex dicta modi reprehenderit amet ea molestiae, maxime alias illo iusto officiis? Itaque maxime pariatur suscipit, vitae nesciunt iure eligendi nulla tenetur cumque illum eum asperiores deserunt, molestiae necessitatibus voluptates fugiat dolores odio culpa. Nihil pariatur mollitia quae maxime fugit. Nihil eaque ut expedita porro odio hic, debitis modi molestiae voluptatibus laborum quas quia. Quos quisquam aspernatur quam adipisci. Sequi omnis aut nemo officia inventore facere tenetur delectus beatae odio eum molestias minima commodi facilis voluptas consequuntur voluptate, quibusdam hic odit, incidunt non fuga distinctio, repudiandae eius vero. 
-    </div>
-  )
+
+  const [ BlogData, SetBlogData ] = useState([]);
+  // console.log(BlogData)
+
+  useEffect(()=>{
+    GetBlog().then((Result)=>{
+      // console.log(Result)
+      SetBlogData(Result)
+    })
+  },[]);
+  if(BlogData.length > 0 ){
+    return (
+      <div className='blog-body'>
+      <div className="row blog-items">
+        <div className="col-md-12">
+          <h1>BLOGS</h1>
+          <div className="row">
+          {
+              BlogData.map((item,index)=>{
+                return(
+                  <div className="col-md-6 blogs-item" key={index}>
+                    <figure>
+                      <img src={item.image} alt="" />
+                    </figure>
+                    <div className='blogs-text-section'>
+                    <h5><a href="/">{item.subject}</a></h5>
+                    <div className="row">
+                      <div className="col-4">10:11:2022</div>
+                      <div className="col-8 blog-icons">
+                        <span><FaRegComment  className='icon'/> 5 </span>
+                        <span><AiOutlineEye  className='icon' /> 20 </span>
+                        </div>
+                    </div>
+                    </div>
+                  </div>
+                )
+              })
+          }
+          </div>
+        </div>
+      </div>
+      </div>
+    )
+  }else{
+    return (
+      <div className='blog-body'>
+        <FullScrenLoder/>
+      </div>
+    )
+  }
+  
 }
 
 export default Blogs

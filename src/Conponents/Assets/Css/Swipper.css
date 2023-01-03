@@ -1,0 +1,57 @@
+.swiper {
+    width: 100%;
+    height: 100%;
+    
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .main{
+    margin: auto;
+    background: rgb(237, 228, 228);
+    color:black;
+    border-radius: 20px;
+    position: relative;
+  }
+  .clientImg img{
+    margin: auto;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border:3px solid rgba(11, 223, 28, 0.873) ;
+  }
+.clientInfo{
+    text-align: left;
+    text-align: center;
+}
+.clientComment{
+    text-align: left;
+    margin: 0 auto;
+}
+.icons span{
+    font-size: 25px;
+    color: rgba(11, 223, 28, 0.873);
+}

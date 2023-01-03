@@ -1,11 +1,58 @@
-import React from 'react'
-
+import React, { useEffect,useState } from 'react'
+import { GetPortfolio } from '../../ApiServices/ApiService'
+import FullScrenLoder from '../Common/FullScreenLoder';
+import { NavLink } from 'react-router-dom';
 const Portfolios = () => {
-  return (
-    <div className='main-body'>
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste quibusdamdolor exercitationem praesentium sint quis hic, dolorem impedit eaque maxime voluptas mollitia, error ipsam! Itaque magnam veritatis, reprehenderit explicabo repellat a delectus quae sequi animi aliquam eligendi similique maxime corporis. Ducimus adipisci incidunt placeat, aperiam esse voluptatem quisquam perspiciatis! Expedita laudantium animi quis ut dolor facere voluptatibus hic et, consequuntur cumque natus, tempora provident? Reiciendis, nobis. Minus asperiores eaque quo reprehenderit exercitationem voluptates obcaecati iste sapiente doloribus molestias, voluptatem, dolor temporibus fugit ipsa. Deleniti aspernatur commodi quo ullam mollitia inventore odio accusamus quam. Corrupti vero culpa unde nam, molestias numquam facere autem aliquam rerum architecto fugit reiciendis porro aliquid consectetur, sint expedita optio voluptatem. Mollitia cum deserunt fuga illo quis! Quibusdam quaerat temporibus aliquid, quos fugit facilis asperiores doloremque architecto autem sit aspernatur et iusto amet eveniet eius sed reprehenderit fugiat? Fugiat tempora in perspiciatis vel magni expedita maxime distinctio repellendus dolores quos, ab nesciunt libero fuga reprehenderit exercitationem, dignissimos quibusdam mollitia? Nulla veniam at eaque modi odio inventore perspiciatis fugit enim! Corrupti nobis quas perspiciatis! Sit nam excepturi earum expedita ducimus et nobis, molestias consequatur sint necessitatibus dolores ad ipsum voluptas in velit ipsa assumenda illo? Sapiente, pariatur ipsa, ea veritatis est autem animi, at magnam mollitia repellat nulla eligendi debitis molestias totam perspiciatis maiores officia ex? Inventore aut culpa beatae recusandae itaque assumenda illum dolores praesentium quo neque expedita nesciunt, dolorum, ex dicta modi reprehenderit amet ea molestiae, maxime alias illo iusto officiis? Itaque maxime pariatur suscipit, vitae nesciunt iure eligendi nulla tenetur cumque illum eum asperiores deserunt, molestiae necessitatibus voluptates fugiat dolores odio culpa. Nihil pariatur mollitia quae maxime fugit. Nihil eaque ut expedita porro odio hic, debitis modi molestiae voluptatibus laborum quas quia. Quos quisquam aspernatur quam adipisci. Sequi omnis aut nemo officia inventore facere tenetur delectus beatae odio eum molestias minima commodi facilis voluptas consequuntur voluptate, quibusdam hic odit, incidunt non fuga distinctio, repudiandae eius vero. 
-    </div>
-  )
+
+  const [PortfolioData ,SetPortfolioData] = useState([]);
+  // console.log(PortfolioData)
+  // console.log(PortfolioData)
+
+  useEffect(()=>{
+    GetPortfolio().then((Result)=>{
+      // alert(Result[0])
+      SetPortfolioData(Result)
+    })
+    },[])
+
+    if( PortfolioData.length > 0 ){
+      return (
+        <div className='portfolio-body'>
+        <div className="row portfolio-items">
+          <div className="col-md-12">
+            <h1>PORTFOLIOS</h1>
+            <div className="row">
+              {
+                PortfolioData.map((item,index)=>{
+                  return(
+                    <div className="col-md-6 pt-4 portfolio-item">
+                      <figure>
+                        <img src={item.image} alt="portfolioimg.." />
+                      </figure>
+                      <h6>Name : {item.name}</h6>
+                      <h6>Category : {item.category}</h6>
+                      <h6>Technology : {item.technology}</h6>
+                      <div className="botton">
+                        <NavLink to={item.live} target="_blank">Live Link</NavLink>
+                      </div>
+                    </div>
+                  )
+                })
+              }
+            </div>
+          </div>
+        </div>
+        </div>
+      )
+    }else{
+      return (
+        <div  className='portfolio-body'>
+        <FullScrenLoder/>
+      </div>
+      )
+    }
+
+  
 }
 
 export default Portfolios

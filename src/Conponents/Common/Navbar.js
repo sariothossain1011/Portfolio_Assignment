@@ -1,10 +1,19 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import Profile from '../Assets/Image/profile.jpg'
+
+import { FaBars } from 'react-icons/fa';
+import { RxCross2 } from 'react-icons/rx';
+
 const Navbar = () => {
   return (
-
-    <div className='nav-section'>
+    <>  
+        <input type="checkbox" id="check"/>
+        <label for="check">
+            <FaBars id="btn"/>
+            <RxCross2 id="cancel"/>
+        </label>
+        <div className='nav-section sidebar'>
         <nav>
         <div className="img-section">
             <img src={Profile} alt="" />
@@ -37,7 +46,7 @@ const Navbar = () => {
         </div>
         </nav>
     </div>
-
+    </>
   )
 }
 

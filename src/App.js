@@ -3,12 +3,15 @@ import { BrowserRouter,Routes,Route } from 'react-router-dom'
 import Home from './Conponents/Home/Home'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Conponents/Assets/Css/Style.css'
+import './Conponents/Assets/Css/Swipper.css'
+import './Conponents/Assets/Css/Responsive.css'
 import AboutPage from './Pages/AboutPage';
 import ResumePage from './Pages/ResumePage';
 import PortfoliosPage from './Pages/PortfoliosPage';
 import BlogPage from './Pages/BlogPage';
 import ContactPage from './Pages/ContactPage';
 import NavbarPage from './Pages/NavbarPage';
+import "swiper/css/bundle";
 const App = () => {
   return (
     <BrowserRouter>
