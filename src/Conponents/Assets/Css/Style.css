@@ -16,6 +16,7 @@ label{
     min-height: 100vh;
     position: fixed;
     transition: all .5s ease;
+    z-index: 1111;
 }
 .img-section img{
     width: 180px;
@@ -72,6 +73,8 @@ label{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    height: 100vh;
+
 }
 .text-section{
     color: #fff;
@@ -93,8 +96,8 @@ label{
 }
 .incons{
     margin-left: 15px;
-    height: 45px;
-    width: 45px;
+    height: 40px;
+    width: 40px;
     color:rgba(11, 223, 28, 0.873);
 }
 .button-section{
@@ -217,7 +220,30 @@ label{
     font-weight: bolder;
     font-size: 20px;
 }
+.cerfificate-section span{
+    border-bottom: 6px solid rgba(11, 223, 28, 0.873);
+}
 
+
+
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+  
 /* RESUME STYLE SECTION END */
 
 /* PORTFOLIO STYLE SECTION END */
@@ -386,3 +412,23 @@ label{
 }
 
 /* CONTACK STYLE SECTION END */
+
+
+/* ERROR STYLE SECTION END */
+.error-body{
+    padding-left: 300px;
+    min-height: 100vh;
+}
+.error-items{
+    background: url('../Image/error.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: auto 0;
+}
+.error-button{
+    text-align: center;
+    margin-top: 45%;
+}
+/* ERROR STYLE SECTION END */

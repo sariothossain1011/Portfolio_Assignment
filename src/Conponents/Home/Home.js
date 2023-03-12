@@ -8,11 +8,10 @@ const Home = () => {
     <div className='home-body'>
     <div className="home-items">
       <div className='text-section'>
-        <h1>Hi ,I'm <span>Saiot Hossain</span></h1>
-        <p>Full Stack Web Developer and Web Application specializing in front-end and back-end development. Experienced with all stages of the development cycle for dynamic websites. Well versed in numerous programming languages JavaScript ES6 Nodejs, structured language HTML5 CSS3, Libraries REACT-JS With MongoDB Database.</p>
+        <h1>HI ,I'M <span>SARIOT HOSSAIN</span></h1>
+        <p>"I am a web developer with three years of experience. I have expertise in HTML, CSS, Bootstrap, Tailwin css,  JavaScript ES6, React.js, Redux, Next.js ,Node.js, express.js, MongoDB, Mongoose , Agggregate, Data Structure, Algorithm and am passionate about creating beautiful and functional websites that exceed client expectations. I am excited to continue expanding my skillset and taking on new challenges in the ever-evolving world of web development."</p>
       </div>
       <div className="media-link-section">
-      
        <NavLink to="#"><BsFacebook className='incons'/></NavLink>
        <NavLink to="#"><BsLinkedin className='incons'/></NavLink>
        <NavLink to="#"><BsYoutube className='incons'/></NavLink>

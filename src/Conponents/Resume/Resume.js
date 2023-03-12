@@ -1,11 +1,24 @@
-import React from 'react'
-
+import React, { useRef, useState  } from "react";
+import { NavLink } from "react-router-dom";
 import { FcGraduationCap } from 'react-icons/fc';
 import { IoCodeWorkingSharp } from 'react-icons/io5';
-
 import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
+
+
+import "../Assets/Css/CertificateSlider.css";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
+// import required modules
+import { EffectCoverflow, Pagination } from "swiper";
+
+
 const Resume = () => {
+  
   return (
     <div className='resume-body'>
       <div className="resume-items">
@@ -21,7 +34,7 @@ const Resume = () => {
                 <h2>Diploma engineering (CSE)</h2>
                 <h4>Bangladesh Technical Education Board (BTEB)</h4>
                 <h5>Result : pending</h5>
-                <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas quo distinctio corrupti incidunt a quam repellendus laboriosam quia dolorum illo laborum inventore, laudantium cupiditate eum ea ullam? Similique, quibusdam nam! </p>
+                <p> "From the beginning of my diploma, I was eager to learn and grow. I faced challenges along the way, but with hard work and dedication, I completed the program with new skills and a bright future ahead." </p>
               </div>
             </div>
             <div className="row">
@@ -41,7 +54,7 @@ const Resume = () => {
           <h3><IoCodeWorkingSharp className='experince-icon'/> Working Experience</h3>
             <div className="row">
               <div className="col-md-4">
-                <h2>20121 - Present</h2>
+                <h2>2021 - 2022</h2>
               </div>
               <div className="col-md-8">
                 <h2>Full stack Web Developer (MERN)</h2>
@@ -51,7 +64,7 @@ const Resume = () => {
             </div>
             <div className="row">
               <div className="col-md-4">
-                <h2>2019 - 21</h2>
+                <h2>2019 - 2021</h2>
               </div>
               <div className="col-md-8">
                 <h2>UI/UX Designer</h2>
@@ -61,7 +74,7 @@ const Resume = () => {
             </div>
             
           </div>
-          <div className="col-md-12 skill-section">
+          <div className="col-md-12 skill-section py-4">
           <h1>SKILL <span>POINT</span></h1>
             <div className="circular-items">
 
@@ -86,6 +99,10 @@ const Resume = () => {
               <h4>REACT JS</h4>
              </div>
              <div className="item">
+              <CircularProgressbar value={75} text={`75%`} className='icon'/>
+              <h4>NEXT JS</h4>
+             </div>
+             <div className="item">
               <CircularProgressbar value={70} text={`60%`} className='icon'/>
               <h4>NODE JS</h4>
              </div>
@@ -96,6 +113,10 @@ const Resume = () => {
              <div className="item">
               <CircularProgressbar value={75} text={`75%`} className='icon'/>
               <h4>MONGODB</h4>
+             </div>
+             <div className="item">
+              <CircularProgressbar value={75} text={`75%`} className='icon'/>
+              <h4>MONGOOSE</h4>
              </div>
              <div className="item">
               <CircularProgressbar value={70} text={`70%`} className='icon'/>
@@ -133,6 +154,65 @@ const Resume = () => {
             </div>
           </div>
           
+          <div className="col-md-12 cerfificate-section py-4">
+              <h1>MY <span>CERTIFICATE</span></h1>
+              <div className="p-5">
+              "After overcoming many obstacles and dedicating countless hours of hard work, I am ecstatic to announce that I have earned my certificate. It is a true testament to my determination and passion for [insert subject here]."
+              </div>
+              <div className="cerfificate-item pt-3">
+
+              <Swiper
+        effect={"coverflow"}
+        grabCursor={true}
+        centeredSlides={true}
+        slidesPerView={"auto"}
+        coverflowEffect={{
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        }}
+        pagination={true}
+        modules={[EffectCoverflow, Pagination]}
+        className="mySwiper"
+      >
+        <SwiperSlide>
+          <a href='https://res.cloudinary.com/dmqu5abqn/image/upload/v1678125269/certificate01_epqqck.png' target="_blank">
+          <img src="https://res.cloudinary.com/dmqu5abqn/image/upload/v1678125269/certificate01_epqqck.png" />
+          </a>
+        </SwiperSlide>
+        <SwiperSlide>
+          <a href='https://res.cloudinary.com/dmqu5abqn/image/upload/v1678125558/cerfificate02_gh4cvd.webp' target="_blank">
+          <img src="https://res.cloudinary.com/dmqu5abqn/image/upload/v1678125558/cerfificate02_gh4cvd.webp" />
+          </a>
+        </SwiperSlide>
+        <SwiperSlide>
+          <a href='https://res.cloudinary.com/dmqu5abqn/image/upload/v1678125269/certificate01_epqqck.png' target="_blank">
+          <img src="https://res.cloudinary.com/dmqu5abqn/image/upload/v1678125269/certificate01_epqqck.png" />
+          </a>
+        </SwiperSlide>
+        <SwiperSlide>
+          <a href='https://res.cloudinary.com/dmqu5abqn/image/upload/v1678125558/cerfificate02_gh4cvd.webp' target="_blank">
+          <img src="https://res.cloudinary.com/dmqu5abqn/image/upload/v1678125558/cerfificate02_gh4cvd.webp" />
+          </a>
+        </SwiperSlide>
+        <SwiperSlide>
+          <a href='https://res.cloudinary.com/dmqu5abqn/image/upload/v1678125269/certificate01_epqqck.png' target="_blank">
+          <img src="https://res.cloudinary.com/dmqu5abqn/image/upload/v1678125269/certificate01_epqqck.png" />
+          </a>
+        </SwiperSlide>
+        <SwiperSlide>
+          <a href='https://res.cloudinary.com/dmqu5abqn/image/upload/v1678125558/cerfificate02_gh4cvd.webp' target="_blank">
+          <img src="https://res.cloudinary.com/dmqu5abqn/image/upload/v1678125558/cerfificate02_gh4cvd.webp" />
+          </a>
+        </SwiperSlide>
+        
+        
+        </Swiper>
+
+              </div>
+          </div>
         </div>
       </div>
     </div>
@@ -141,3 +221,4 @@ const Resume = () => {
 }
 
 export default Resume
+
