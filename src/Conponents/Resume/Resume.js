@@ -156,7 +156,7 @@ const Resume = () => {
           
           <div className="col-md-12 cerfificate-section py-4">
               <h1>MY <span>CERTIFICATE</span></h1>
-              <div className="p-5">
+              <div className="">
               "After overcoming many obstacles and dedicating countless hours of hard work, I am ecstatic to announce that I have earned my certificate. It is a true testament to my determination and passion for [insert subject here]."
               </div>
               <div className="cerfificate-item pt-3">
