@@ -2,18 +2,18 @@ import {  toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 class ValidationHelpers{
-    IsEmty(value){
+    IsEmpty(value){
         if(value.length===0){
             return true
         }else{
             return false
         }
     };
-    SuccessTost(msg){
+    SuccessToast(msg){
         toast.success(msg)
 
     };
-    ErrorTost(msg){
+    ErrorToast(msg){
         toast.error(msg)
         
     }
@@ -21,4 +21,4 @@ class ValidationHelpers{
     
 }
 
-export const {IsEmty,SuccessTost,ErrorTost }= new ValidationHelpers()
+export const {IsEmpty,SuccessToast,ErrorToast }= new ValidationHelpers()

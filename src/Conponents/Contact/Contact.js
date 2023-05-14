@@ -4,8 +4,9 @@ import { BsFacebook,BsLinkedin,BsYoutube ,BsFillTelephoneOutboundFill} from "rea
 import { VscGithub} from "react-icons/vsc";
 import {MdEmail} from 'react-icons/md'
 import { NavLink } from 'react-router-dom';
-import { ErrorTost, IsEmty, SuccessTost } from '../../Helpers/Validation';
+
 import { ContactApi } from '../../ApiServices/ApiService';
+import { ErrorToast, IsEmpty, SuccessToast } from '../../Helpers/Validation';
 // import FullScrenLoder from '../Common/FullScreenLoder';
 const Contact = () => {
   let {subject ,name ,email,comment} =useRef();
@@ -17,14 +18,14 @@ const Contact = () => {
     let Email = email.value ;
     let Comment = comment.value ;
 
-    if(IsEmty(Subject)){
-      ErrorTost('Plasce subject required')
-  }else if(IsEmty(Name)){
-      ErrorTost('Plasce name required')
-  }else if(IsEmty(Email)){
-      ErrorTost('Plasce email required')
-  }else if(IsEmty(Comment)){
-      ErrorTost('Plasce text required')
+    if(IsEmpty(Subject)){
+      ErrorToast('Plasce subject required')
+  }else if(IsEmpty(Name)){
+    ErrorToast('Plasce name required')
+  }else if(IsEmpty(Email)){
+    ErrorToast('Plasce email required')
+  }else if(IsEmpty(Comment)){
+    ErrorToast('Plasce text required')
   }
   else{
     // Loder.classList.remove("d-none")
@@ -32,14 +33,14 @@ const Contact = () => {
       // alert(Result)
       // Loder.classList.add("d-none")
         if(Result===true){
-          SuccessTost("Comment send success");
+          SuccessToast("Comment send success");
           subject.value='' ;
           name.value='';
           email.value='';
           comment.value='';
         }
       }).catch((error)=>{
-        ErrorTost("Comment send fail")
+        ErrorToast("Comment send fail")
         console.log(error)
       })
   }

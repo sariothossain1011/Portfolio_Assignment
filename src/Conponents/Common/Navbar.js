@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import Profile from '../Assets/Image/profile.jpg'
+import Profile from '../Assets/Image/sariot-hossain.jpg'
 
 import { FaBars } from 'react-icons/fa';
 import { RxCross2 } from 'react-icons/rx';
@@ -24,7 +24,7 @@ const Navbar = () => {
                 <NavLink to="/">HOME</NavLink>
             </li>
             <li>
-                <NavLink to="/about">ABOUTS</NavLink>
+                <NavLink to="/about">ABOUT</NavLink>
             </li>
             <li>
                 <NavLink to="/resume">RESUME</NavLink>

@@ -1,9 +1,9 @@
 import React from 'react'
-import Blogs from '../Conponents/blogs/Blogs'
+import BlogsList from '../Conponents/blogs/BlogsList'
 
 const BlogPage = () => {
   return (
-    <Blogs />
+    <BlogsList />
   )
 }
 

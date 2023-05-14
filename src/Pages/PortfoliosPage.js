@@ -1,5 +1,5 @@
 import React from 'react'
-import Portfolios from '../Conponents/Portfolios/Portfolios'
+import Portfolios from '../Conponents/Portfolios/PortfoliosList'
 
 const PortfoliosPage = () => {
   return (

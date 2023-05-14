@@ -10,6 +10,8 @@ import ContactPage from './Pages/ContactPage';
 import NavbarPage from './Pages/NavbarPage';
 import "swiper/css/bundle";
 import ErrorPage from './Pages/ErrorPage';
+import SinglePortfoliosPage from './Pages/SinglePortfoliosPage';
+import SingleBlogPage from './Pages/SingleBlogPage';
 const App = () => {
   return (
     <BrowserRouter>
@@ -19,7 +21,9 @@ const App = () => {
         <Route path='/about' element={<AboutPage/>} />
         <Route path='/resume' element={<ResumePage/>} />
         <Route path='/portfolios' element={<PortfoliosPage/>} />
+        <Route path='/portfolios/:id' element={<SinglePortfoliosPage/>} />
         <Route path='/blogs' element={<BlogPage/>} />
+        <Route path='/blogs/:id' element={<SingleBlogPage/>} />
         <Route path='/contact' element={<ContactPage/>} />
         <Route path='*' element={<ErrorPage/>} />
       </Routes>
