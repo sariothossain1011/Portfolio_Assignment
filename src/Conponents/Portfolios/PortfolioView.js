@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 import { BiLink } from "react-icons/bi";
 import { MdVideoLibrary} from "react-icons/md";
 import { BsArrowLeft} from "react-icons/bs";
-import "./Style.css";
+import "./Portfolios.css";
 
 const PortfolioView = () => {
   const { id } = useParams();
@@ -17,8 +17,8 @@ const PortfolioView = () => {
   const data = useSelector((state) => state.portfolios.PortfolioView);
   return (
     <Fragment>
-      <div className="portfolio-body">
-        <div className="row portfolio-items">
+      <div className="section-body">
+        <div className="section-items">
         
           <div className="row">
             <div className="col-md-12">

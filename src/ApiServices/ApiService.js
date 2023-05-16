@@ -7,29 +7,6 @@ import { BASE_URL } from '../Helpers/config';
 import { SetBlogView, SetBlogsList } from '../Redux/state-slice/blogs-slice';
 
 
-// https://professionalwebsite-server.vercel.app/api/v1/
-// const API = "https://professionalwebsite-server.vercel.app/api/v1"
-
-// COMMENT
-export const ContactApi=async(subject,name,email,comment)=>{
-    let URL = `${BASE_URL}/contact`
-    let PostBody = {
-        subject:subject,
-        name:name,
-        email:email,
-        comment:comment,
-    }
-    return await axios.post(URL,PostBody).then((Result)=>{
-        // alert(Result)
-        if(Result.status === 200){
-            return true
-        }
-    }).catch((error)=>{
-        // console.log(error)
-        return false
-    })
-}
-
 //BLOGS
 export const GetBlog=async()=>{
     let URL =`${BASE_URL}/getBlog` ;

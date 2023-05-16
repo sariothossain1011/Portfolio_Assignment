@@ -1,0 +1,114 @@
+[
+  {
+    "name": "HTML",
+    "value": "99%",
+    "value1": "99"
+  },
+  {
+    "name": "CSS",
+    "value": "90%",
+    "value1": "90"
+  },
+  {
+    "name": "BOOTSTRAP",
+    "value": "95%",
+    "value1": "95"
+  },
+  {
+    "name": "TAILWIND CSS",
+    "value": "70%",
+    "value1": "70"
+  },
+
+  {
+    "name": "JAVASCRIPT",
+    "value": "90%",
+    "value1": "90"
+  },
+  {
+    "name": "REACT JS",
+    "value": "95%",
+    "value1": "95"
+  },
+  {
+    "name": "NEXT JS",
+    "value": "70%",
+    "value1": "70"
+  },
+  {
+    "name": "REDUX",
+    "value": "75%",
+    "value1": "75"
+  },
+  {
+    "name": "REACT NATIVE",
+    "value": "65%",
+    "value1": "65"
+  },
+
+  {
+    "name": "NODE JS",
+    "value": "80%",
+    "value1": "80"
+  },
+  {
+    "name": "EXPRESS JS",
+    "value": "85%",
+    "value1": "85"
+  },
+  {
+    "name": "MONGODB",
+    "value": "90%",
+    "value1": "90"
+  },
+  {
+    "name": "AGGREGATION",
+    "value": "75%",
+    "value1": "75"
+  },
+  {
+    "name": "JWT",
+    "value": "90%",
+    "value1": "90"
+  },
+  {
+    "name": "POSTMAN",
+    "value": "80%",
+    "value1": "80"
+  },
+  {
+    "name": "ALGORITHM",
+    "value": "60%",
+    "value1": "60"
+  },
+  {
+    "name": "DATA STRUCTURE",
+    "value": "70%",
+    "value1": "70"
+  },
+  {
+    "name": "OOPS",
+    "value": "70%",
+    "value1": "70"
+  },
+  {
+    "name": "PYTHON",
+    "value": "50%",
+    "value1": "50"
+  },
+  {
+    "name": "JAVA",
+    "value": "50%",
+    "value1": "50"
+  },
+  {
+    "name": "C#",
+    "value": "50%",
+    "value1": "50"
+  },
+  {
+    "name": "JAVA",
+    "value": "50%",
+    "value1": "50"
+  }
+]

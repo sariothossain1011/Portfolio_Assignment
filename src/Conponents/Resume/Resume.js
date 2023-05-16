@@ -1,224 +1,164 @@
-import React, { useRef, useState  } from "react";
+import React, { useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
-import { FcGraduationCap } from 'react-icons/fc';
-import { IoCodeWorkingSharp } from 'react-icons/io5';
-import { CircularProgressbar } from 'react-circular-progressbar';
-import 'react-circular-progressbar/dist/styles.css';
-
-
-import "../Assets/Css/CertificateSlider.css";
-// Import Swiper React components
+import { FcGraduationCap } from "react-icons/fc";
+import { IoCodeWorkingSharp } from "react-icons/io5";
+import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
+import "react-circular-progressbar/dist/styles.css";
+// import { CircularProgressbar } from "react-circular-progressbar";
+// import "react-circular-progressbar/dist/styles.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
-// import required modules
 import { EffectCoverflow, Pagination } from "swiper";
+import "./CertificateSlider.css";
+const skill = require("./Skill.json");
+const education = require("./Education.json");
+const work = require("./Work.json");
+const certificate = require("./Certificate.json");
+
 
 
 const Resume = () => {
-  
   return (
-    <div className='resume-body'>
-      <div className="resume-items">
+    <div className="section-body">
+      <div className="section-items">
         <div className="row">
-          <h1>RESUME</h1>
+          <h1 className="title">RESUME</h1>
           <div className="col-md-12 education">
-            <h3><FcGraduationCap className='education-icon'/> Educational Qualifications</h3>
-            <div className="row">
-              <div className="col-md-4">
-                <h2>2019 - Present</h2>
-              </div>
-              <div className="col-md-8">
-                <h2>Diploma engineering (CSE)</h2>
-                <h4>Bangladesh Technical Education Board (BTEB)</h4>
-                <h5>Result : pending</h5>
-                <p> "From the beginning of my diploma, I was eager to learn and grow. I faced challenges along the way, but with hard work and dedication, I completed the program with new skills and a bright future ahead." </p>
-              </div>
-            </div>
-            <div className="row">
-              <div className="col-md-4">
-                <h2>2018 - 2019</h2>
-              </div>
-              <div className="col-md-8">
-                <h2>Secondary School Certificate (SSC)</h2>
-                <h4>Board of Intermediate & Secondary Education, Chattogram</h4>
-                <h5>Result : 4.28</h5>
-                <p>I completed Secondary School Certificate from Mohammad Ilias Mia Chy: High School. I was a student of Science background. I completed SSC in 2019.</p>
-              </div>
-            </div>
-            
+            <h2>
+              <FcGraduationCap className="education-icon" /> Educational
+              Qualifications
+            </h2>
+            {education ? (
+              education.map((item, index) => {
+                return (
+                  <div className="row">
+                    <div className="col-md-4">
+                      <h2>{item.date}</h2>
+                    </div>
+                    <div className="col-md-8">
+                      <h2>{item.subject}</h2>
+                      <h4>{item.board}</h4>
+                      <h5>Result : {item.result}</h5>
+                      <p>{item.info}</p>
+                    </div>
+                  </div>
+                );
+              })
+            ) : (
+              <div></div>
+            )}
           </div>
-          <div className="col-md-12 experince">
-          <h3><IoCodeWorkingSharp className='experince-icon'/> Working Experience</h3>
-            <div className="row">
-              <div className="col-md-4">
-                <h2>2021 - 2022</h2>
-              </div>
-              <div className="col-md-8">
-                <h2>Full stack Web Developer (MERN)</h2>
-                <h4>Owner Company</h4>
-                <p>Working as Full stack Web Developer As MERN. My complete focus is on MERN stack development. MEAN is a free and open-source JavaScript software stack for building dynamic websites and web applications. Creating and submitting new projects daily as per proper guidelines and information.</p>
-              </div>
-            </div>
-            <div className="row">
-              <div className="col-md-4">
-                <h2>2019 - 2021</h2>
-              </div>
-              <div className="col-md-8">
-                <h2>UI/UX Designer</h2>
-                <h4>Owner Company</h4>
-                <p>I have experience creating web templates from Adobe XD and Figma. But currently I mostly work with Figma. But no problem I have ample experience in both. I have done everything from figma to html.</p>
-              </div>
-            </div>
-            
+          <div className="col-md-12">
+            <h2>
+              <IoCodeWorkingSharp  /> Working
+              Experience
+            </h2>
+            {work ? (
+              work.map((item, index) => {
+                return (
+                  <div className="row">
+                    <div className="col-md-4">
+                      <h2>{item.date}</h2>
+                    </div>
+                    <div className="col-md-8">
+                      <h2>{item.subject}</h2>
+                      <h4>{item.company}</h4>
+                      <p>{item.info}</p>
+                    </div>
+                  </div>
+                );
+              })
+            ) : (
+              <div></div>
+            )}
           </div>
           <div className="col-md-12 skill-section py-4">
-          <h1>SKILL <span>POINT</span></h1>
+            <h1>
+              SKILL <span>POINT</span>
+            </h1>
             <div className="circular-items">
-
-             <div className="item">
-              <CircularProgressbar value={90} text={`90%`} className='icon'/>
-              <h4>HTML5</h4>
-             </div>
-             <div className="item">
-              <CircularProgressbar value={80} text={`80%`} className='icon'/>
-              <h4>CSS</h4>
-             </div>
-             <div className="item">
-              <CircularProgressbar value={80} text={`80%`} className='icon'/>
-              <h4>BOOTSTRAP</h4>
-             </div>
-             <div className="item">
-              <CircularProgressbar value={70} text={`70%`} className='icon'/>
-              <h4>JAVASCRIPT</h4>
-             </div>
-             <div className="item">
-              <CircularProgressbar value={80} text={`80%`} className='icon'/>
-              <h4>REACT JS</h4>
-             </div>
-             <div className="item">
-              <CircularProgressbar value={75} text={`75%`} className='icon'/>
-              <h4>NEXT JS</h4>
-             </div>
-             <div className="item">
-              <CircularProgressbar value={70} text={`60%`} className='icon'/>
-              <h4>NODE JS</h4>
-             </div>
-             <div className="item">
-              <CircularProgressbar value={85} text={`85%`} className='icon'/>
-              <h4>EXPRESS JS</h4>
-             </div>
-             <div className="item">
-              <CircularProgressbar value={75} text={`75%`} className='icon'/>
-              <h4>MONGODB</h4>
-             </div>
-             <div className="item">
-              <CircularProgressbar value={75} text={`75%`} className='icon'/>
-              <h4>MONGOOSE</h4>
-             </div>
-             <div className="item">
-              <CircularProgressbar value={70} text={`70%`} className='icon'/>
-              <h4>GIT</h4>
-             </div>
-             <div className="item">
-              <CircularProgressbar value={60} text={`60%`} className='icon'/>
-              <h4>TAILWINCSS</h4>
-             </div>
-             <div className="item">
-              <CircularProgressbar value={85} text={`85%`} className='icon'/>
-              <h4>JWT</h4>
-             </div>
-             <div className="item">
-              <CircularProgressbar value={90} text={`90%`} className='icon'/>
-              <h4>POSTMAN</h4>
-             </div>
-             <div className="item">
-              <CircularProgressbar value={30} text={`30%`} className='icon'/>
-              <h4>PHYTHON</h4>
-             </div>
-             <div className="item">
-              <CircularProgressbar value={30} text={`30%`} className='icon'/>
-              <h4>JAVA</h4>
-             </div>
-             <div className="item">
-              <CircularProgressbar value={30} text={`30%`} className='icon'/>
-              <h4>C#</h4>
-             </div>
-             <div className="item">
-              <CircularProgressbar value={60} text={`60%`} className='icon'/>
-              <h4>REDUX</h4>
-             </div>
-             
+              {skill ? (
+                skill.map((item, index) => {
+                  return (
+                    <div className="item" key={index}>
+                      {/* <CircularProgressbar
+                        value={item.value1}
+                        text={item.value}
+                        className="icon"
+                      /> */}
+                      <CircularProgressbar
+                        value={item.value1}
+                        text={item.value}
+                        className="icon"
+                        strokeWidth={9}
+                        styles={buildStyles({
+                          pathColor: "#4bffa5", // Replace with your desired color
+                          textColor: "#fff", // Replace with your desired color
+                          trailColor: "#CCCCCC", // Replace with your desired color
+                          // pathTransitionDuration: 7, // Replace with your desired duration in seconds
+                          // pathWidth: 50
+                          
+                        })}
+                      />
+                      <h4>{item.name}</h4>
+                    </div>
+                  );
+                })
+              ) : (
+                <div></div>
+              )}
             </div>
           </div>
-          
+
           <div className="col-md-12 cerfificate-section py-4">
-              <h1>MY <span>CERTIFICATE</span></h1>
-              <div className="pt-2">
-              "After overcoming many obstacles and dedicating countless hours of hard work, I am ecstatic to announce that I have earned my certificate. It is a true testament to my determination and passion for [insert subject here]."
-              </div>
-              <div className="cerfificate-item pt-3">
-
+            <h1>
+              MY <span>CERTIFICATE</span>
+            </h1>
+            <div className="pt-2">
+              "After overcoming many obstacles and dedicating countless hours of
+              hard work, I am ecstatic to announce that I have earned my
+              certificate. It is a true testament to my determination and
+              passion for [insert subject here]."
+            </div>
+            <div className="cerfificate-item pt-3">
               <Swiper
-        effect={"coverflow"}
-        grabCursor={true}
-        centeredSlides={true}
-        slidesPerView={"auto"}
-        coverflowEffect={{
-          rotate: 50,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-          slideShadows: true,
-        }}
-        pagination={true}
-        modules={[EffectCoverflow, Pagination]}
-        className="mySwiper"
-      >
-        <SwiperSlide>
-          <a href='https://res.cloudinary.com/dmqu5abqn/image/upload/v1678125269/certificate01_epqqck.png' target="_blank">
-          <img src="https://res.cloudinary.com/dmqu5abqn/image/upload/v1678125269/certificate01_epqqck.png" />
-          </a>
-        </SwiperSlide>
-        <SwiperSlide>
-          <a href='https://res.cloudinary.com/dmqu5abqn/image/upload/v1678125558/cerfificate02_gh4cvd.webp' target="_blank">
-          <img src="https://res.cloudinary.com/dmqu5abqn/image/upload/v1678125558/cerfificate02_gh4cvd.webp" />
-          </a>
-        </SwiperSlide>
-        <SwiperSlide>
-          <a href='https://res.cloudinary.com/dmqu5abqn/image/upload/v1678125269/certificate01_epqqck.png' target="_blank">
-          <img src="https://res.cloudinary.com/dmqu5abqn/image/upload/v1678125269/certificate01_epqqck.png" />
-          </a>
-        </SwiperSlide>
-        <SwiperSlide>
-          <a href='https://res.cloudinary.com/dmqu5abqn/image/upload/v1678125558/cerfificate02_gh4cvd.webp' target="_blank">
-          <img src="https://res.cloudinary.com/dmqu5abqn/image/upload/v1678125558/cerfificate02_gh4cvd.webp" />
-          </a>
-        </SwiperSlide>
-        <SwiperSlide>
-          <a href='https://res.cloudinary.com/dmqu5abqn/image/upload/v1678125269/certificate01_epqqck.png' target="_blank">
-          <img src="https://res.cloudinary.com/dmqu5abqn/image/upload/v1678125269/certificate01_epqqck.png" />
-          </a>
-        </SwiperSlide>
-        <SwiperSlide>
-          <a href='https://res.cloudinary.com/dmqu5abqn/image/upload/v1678125558/cerfificate02_gh4cvd.webp' target="_blank">
-          <img src="https://res.cloudinary.com/dmqu5abqn/image/upload/v1678125558/cerfificate02_gh4cvd.webp" />
-          </a>
-        </SwiperSlide>
-        
-        
-        </Swiper>
-
-              </div>
+                effect={"coverflow"}
+                grabCursor={true}
+                centeredSlides={true}
+                slidesPerView={"auto"}
+                coverflowEffect={{
+                  rotate: 50,
+                  stretch: 0,
+                  depth: 100,
+                  modifier: 1,
+                  slideShadows: true,
+                }}
+                pagination={true}
+                modules={[EffectCoverflow, Pagination]}
+                className="mySwiper"
+              >
+                {certificate ? (
+                  certificate.map((item, index) => {
+                    return (
+                      <SwiperSlide>
+                        <a href={`${item.url}`} target="_blank">
+                          <img src={`${item.url}`} />
+                        </a>
+                      </SwiperSlide>
+                    );
+                  })
+                ) : (
+                  <div></div>
+                )}
+              </Swiper>
+            </div>
           </div>
         </div>
       </div>
     </div>
+  );
+};
 
-  )
-}
-
-export default Resume
-
+export default Resume;

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import FullScreenLoader from "../../Helpers/FullScreenLoader";
 import ReactPaginate from "react-paginate";
-import "./Style.css";
+import "./Portfolios.css";
 
 const PortfoliosList = () => {
   const [currentPage, setCurrentPage] = useState(0);
@@ -27,43 +27,45 @@ const PortfoliosList = () => {
 
   if (portfoliosData.length > 0) {
     return (
-      <div className="portfolio-body">
-        <div className="row portfolio-items">
-          <div className="col-md-12">
-            <h1>PORTFOLIOS</h1>
-            <div className="row">
-              {portfoliosData.slice(start, end).map((item, index) => {
-                return (
-                  <div className="col-md-6 pt-4 portfolio-item" key={index}>
-                    <figure>
-                      <img src={item.image} alt="portfolio-Img.." />
-                    </figure>
-                    <h6>Name : {item.name}</h6>
-                    <h6>Category : {item.category}</h6>
-                    <h6>Technology : {item.technology}</h6>
-                    <div className="button">
-                      <Link to={`/portfolios/${item._id}`} target="">
-                        View Info
-                      </Link>
+      <div className="section-body">
+        <div className="section-items">
+          <div className="row">
+            <div className="col-md-12">
+              <h1>PORTFOLIOS</h1>
+              <div className="row">
+                {portfoliosData.slice(start, end).map((item, index) => {
+                  return (
+                    <div className="col-md-6 pt-4 portfolio-item" key={index}>
+                      <figure>
+                        <img src={item.image} alt="portfolio-Img.." />
+                      </figure>
+                      <h6>Name : {item.name}</h6>
+                      <h6>Category : {item.category}</h6>
+                      <h6>Technology : {item.technology}</h6>
+                      <div className="button">
+                        <Link to={`/portfolios/${item._id}`} target="">
+                          View Info
+                        </Link>
+                      </div>
                     </div>
-                  </div>
-                );
-              })}
-            </div>
-            <div className="pt-5 ">
-              <ReactPaginate
-                previousLabel={"Prev"}
-                nextLabel={"Next"}
-                pageCount={pageCount}
-                onPageChange={handlePageClick}
-                containerClassName={"pagination"}
-                previousLinkClassName={"pagination__link"}
-                nextLinkClassName={"pagination__link"}
-                previousClassName={"pagination__prev"}
-                nextClassName={"pagination__next"}
-                disabledClassName={"pagination__link--disabled"}
-                activeClassName={"pagination__link--active"}
-              />
+                  );
+                })}
+              </div>
+              <div className="pt-5 ">
+                <ReactPaginate
+                  previousLabel={"Prev"}
+                  nextLabel={"Next"}
+                  pageCount={pageCount}
+                  onPageChange={handlePageClick}
+                  containerClassName={"pagination"}
+                  previousLinkClassName={"pagination__link"}
+                  nextLinkClassName={"pagination__link"}
+                  previousClassName={"pagination__prev"}
+                  nextClassName={"pagination__next"}
+                  disabledClassName={"pagination__link--disabled"}
+                  activeClassName={"pagination__link--active"}
+                />
+              </div>
             </div>
           </div>
         </div>

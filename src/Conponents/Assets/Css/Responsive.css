@@ -51,7 +51,7 @@
     .nav-section{
         left: -300px;
     }
-    .home-body,.about-body,.resume-body,.contact-body,.portfolio-body,.blog-body,.error-body{
+    .home-body,.section-body,.error-body{
         padding-left: 0px;
 
     }
@@ -65,6 +65,10 @@
     .home-items{
         padding: 25% 50px;
     }
+    h3{
+        font-size: 20px;
+        font-weight: 600;
+    }
 }
 
 @media (max-width:800px){
@@ -75,17 +79,13 @@
         width: 36px;
         color: blue;
     }
-    .button-section button {
-        padding: 5px 15px;
-        border: 2px solid green;
 
-    }
     .code span {
         padding: 10px 25px;
         font-size: 14px;
     }
 
-    .home-items,.contact-items,.about-items,.resume-items,.portfolio-items,.blog-items, .error-body{
+    .home-items,.section-items, .error-body{
         padding: 50px 20px;
     }
     .circular-items{
@@ -115,9 +115,7 @@
     .text-section h1 span{
         color:rgba(11, 223, 28, 0.873) ;
     }
-    .text-section p {
-        font-size: 15px;
-    }
+    
     .media-link-section{
         padding: 15px 0px;
     }

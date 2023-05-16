@@ -8,13 +8,15 @@ import PortfoliosPage from './Pages/PortfoliosPage';
 import BlogPage from './Pages/BlogPage';
 import ContactPage from './Pages/ContactPage';
 import NavbarPage from './Pages/NavbarPage';
-import "swiper/css/bundle";
+// import "swiper/css/bundle";
 import ErrorPage from './Pages/ErrorPage';
 import SinglePortfoliosPage from './Pages/SinglePortfoliosPage';
 import SingleBlogPage from './Pages/SingleBlogPage';
+import { ToastContainer } from "react-toastify";
 const App = () => {
   return (
     <BrowserRouter>
+    <ToastContainer/>
     <NavbarPage />
       <Routes>
         <Route path='/' element={<Home/>} />
