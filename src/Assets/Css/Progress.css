@@ -9,7 +9,7 @@
     bottom: 0;
     cursor: pointer;
     z-index: 500000 !important;
-    background-image: url("../Image/load.svg");
+    /* background-image: url("../Image/load.svg"); */
     background-repeat: no-repeat;
     background-size: cover;
     /* background-color: rgba(255, 255, 255, 0.2); */
