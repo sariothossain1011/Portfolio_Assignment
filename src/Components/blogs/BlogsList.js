@@ -47,7 +47,6 @@ const BlogsList = () => {
                   return (
                     <div
                       className="col-md-6 blogs-item"
-                      key={index}
                       data-aos="fade-up"
                       data-aos-anchor-placement="center-bottom"
                       data-aos-duration="1500"
