@@ -1,12 +1,9 @@
-
 import React, { Fragment} from "react";
 // Import Swiper React components
 import SwiperCore, { Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-
-import "./AboutSwiper.css";
 // import required modules
 import Star from "../Common/Star";
 const howIDo = require("./WhatIDo.json");
