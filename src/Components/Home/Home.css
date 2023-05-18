@@ -1,0 +1,73 @@
+
+
+
+/* HOME STYLE SECTION START */
+
+.home-body {
+    padding-left: 280px;
+    min-height: 100vh;
+}
+
+.home-items {
+    color: #fff;
+    padding:180px 30px;
+    text-align: center;
+    margin: auto 0;
+    background: rgb(0,0,0,0.9) url('../../Assets/Image/home-image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    height: 100vh;
+    z-index: -1111;
+}
+.text-section {
+    color: #fff;
+    padding: 15px 20px;
+}
+
+.text-section h2 {
+    padding-bottom: 20px;
+    font-size: 50px;
+    font-weight: 600;
+    color: #79b530;
+}
+
+
+
+.media-link-section {
+    padding: 15px 0px;
+}
+
+
+.button-section {
+    padding: 15px 0px;
+}
+
+.button-section button {
+    padding: 8px 20px;
+    border-radius: 10px;
+    background: none;
+    border: 3px solid #4bffa5;
+    color: #fff;
+}
+
+.download-icon {
+    font-size: 25px;
+}
+
+.code {
+    padding: 20px 0px;
+}
+
+.code span {
+    background: #494b4a;
+    border: none;
+    padding: 12px 50px;
+    border-radius: 5px;
+    color: #4bffa5;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* HOME STYLE SECTION END */

@@ -1,4 +1,11 @@
-/* Line Progress */
+.center-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 85vh;
+}
 .LoadingOverlay {
     position:absolute;
     display:block;
@@ -9,17 +16,14 @@
     bottom: 0;
     cursor: pointer;
     z-index: 500000 !important;
-    /* background-image: url("../Image/load.svg"); */
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* background-color: rgba(255, 255, 255, 0.2); */
+    background-color: #040b1a
 }
 .Line-Progress .indeterminate {
-    background-color: #79b530;
+    background-color: var(--bs-dark);
 }
 .Line-Progress .indeterminate:before {
        z-index: -100 !important;
-        height: 4px;
+        height: 3px;
         content: "";
         position: fixed;
         background-color: inherit;

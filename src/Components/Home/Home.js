@@ -30,7 +30,7 @@ const Home = () => {
               }}
             />
           </h1>
-          <p data-aos="flip-left" data-aos-duration="1500">
+          <p data-aos="zoom-in" data-aos-duration="1500">
             I am a skilled Full Stack Web Developer and Web Application
             specialist, proficient in both front-end and back-end development.
             With expertise in all stages of the development cycle, I excel at

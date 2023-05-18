@@ -1,17 +1,14 @@
-import React, { useRef, useState } from "react";
-import { NavLink } from "react-router-dom";
+
 import { FcGraduationCap } from "react-icons/fc";
 import { IoCodeWorkingSharp } from "react-icons/io5";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
-// import { CircularProgressbar } from "react-circular-progressbar";
-// import "react-circular-progressbar/dist/styles.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
+import "./CertificateSlider.css"
 import { EffectCoverflow, Pagination } from "swiper";
-import "./CertificateSlider.css";
 const skill = require("./Skill.json");
 const education = require("./Education.json");
 const work = require("./Work.json");
