@@ -30,7 +30,7 @@ const BlogView = () => {
               <h2 className="mt-3">{data.subject}</h2>
               <div className="">
                 {data.blogsItems ? (
-                  data.blogsItems?.map((item) => (
+                  data.blogsItems.map((item) => (
                     <div className="pt-4">
                       <h4 className="pb-2">{item.title}</h4>
                       <h4 className="pb-2">{item.details}</h4>
