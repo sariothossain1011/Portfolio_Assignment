@@ -1,10 +1,14 @@
-import React,{Fragment} from 'react'
-import Error from '../Conponents/Error/Error'
+import React, { Fragment, Suspense, lazy } from 'react'
+import LazyLoader from '../Helpers/LazyLoader'
+const Error = lazy(()=>import("../Components/Error/Error"))
+
 
 const ErrorPage = () => {
   return (
     <Fragment>
+        <Suspense lazy={<LazyLoader/>}>
         <Error/>
+        </Suspense>
     </Fragment>
   )
 }

@@ -1,12 +1,15 @@
-import React from 'react'
-import BlogView from '../Conponents/blogs/BlogView'
+import React, { Fragment, Suspense, lazy } from "react";
+import LazyLoader from "../Helpers/LazyLoader";
+const BlogView = lazy(() => import("../Components/blogs/BlogView"));
 
 const SingleBlogPage = () => {
   return (
-    <div>
-        <BlogView/>
-    </div>
-  )
-}
+    <Fragment>
+      <Suspense lazy={<LazyLoader />}>
+        <BlogView />
+      </Suspense>
+    </Fragment>
+  );
+};
 
-export default SingleBlogPage
+export default SingleBlogPage;

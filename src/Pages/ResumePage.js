@@ -1,9 +1,16 @@
-import React from 'react'
-import Resume from '../Conponents/Resume/Resume'
+import React, { Fragment, Suspense, lazy } from "react";
+import LazyLoader from "../Helpers/LazyLoader";
+const Resume = lazy(() =>
+  import("../Components/Resume/Resume")
+);
 
 const ResumePage = () => {
   return (
-    <Resume />
+    <Fragment>
+      <Suspense lazy={<LazyLoader/>}>
+      <Resume />
+      </Suspense>
+    </Fragment>
   )
 }
 

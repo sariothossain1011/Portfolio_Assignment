@@ -7,19 +7,6 @@ import { BASE_URL } from '../Helpers/config';
 import { SetBlogView, SetBlogsList } from '../Redux/state-slice/blogs-slice';
 
 
-//BLOGS
-export const GetBlog=async()=>{
-    let URL =`${BASE_URL}/getBlog` ;
-    return await axios.get(URL).then((Result)=>{
-        if(Result.status === 200){
-            // console.log(Result.data['data'])
-            return Result.data['data']
-        }
-    }).catch((error)=>{
-        // console.log(error)
-        return false
-    })
-}
 
 //PORTFOLIOS GET 
 export async function GetPortfoliosRequest() {
@@ -29,16 +16,7 @@ export async function GetPortfoliosRequest() {
         const response = await axios.get(URL)
         store.dispatch(HideLoader())
         if (response.status === 200 && response.data['status'] === "success") {
-            // console.log(response.data['data']+"api")
             store.dispatch(SetPortfoliosList(response.data['data']))
-            // if (result.data['data'][0]['Rows'].length > 0) {
-            //     // store.dispatch(SetBrandList(result.data['data'][0]['Rows']))
-            //     // store.dispatch(SetBrandListTotal(result.data['data'][0]['Total'][0]['count']))
-            // } else {
-            //     // store.dispatch(SetBrandList([]))
-            //     // store.dispatch(SetBrandListTotal(0))
-            //     ErrorToast("No Data Found")
-            // }
         } else {
             ErrorToast("Something Went Wrong")
         }
@@ -57,14 +35,6 @@ export async function GetSinglePortfolioRequest(id) {
         store.dispatch(HideLoader())
         if (response.status === 200 && response.data['status'] === "success") {
             store.dispatch(SetPortfolioView(response.data['data']))
-            // if (result.data['data'][0]['Rows'].length > 0) {
-            //     // store.dispatch(SetBrandList(result.data['data'][0]['Rows']))
-            //     // store.dispatch(SetBrandListTotal(result.data['data'][0]['Total'][0]['count']))
-            // } else {
-            //     // store.dispatch(SetBrandList([]))
-            //     // store.dispatch(SetBrandListTotal(0))
-            //     ErrorToast("No Data Found")
-            // }
         } else {
             ErrorToast("Something Went Wrong")
         }
@@ -83,16 +53,7 @@ export async function GetBlogsRequest() {
         const response = await axios.get(URL)
         store.dispatch(HideLoader())
         if (response.status === 200 && response.data['status'] === "success") {
-            // console.log(response.data['data']+"api")
             store.dispatch(SetBlogsList(response.data['data']))
-            // if (result.data['data'][0]['Rows'].length > 0) {
-            //     // store.dispatch(SetBrandList(result.data['data'][0]['Rows']))
-            //     // store.dispatch(SetBrandListTotal(result.data['data'][0]['Total'][0]['count']))
-            // } else {
-            //     // store.dispatch(SetBrandList([]))
-            //     // store.dispatch(SetBrandListTotal(0))
-            //     ErrorToast("No Data Found")
-            // }
         } else {
             ErrorToast("Something Went Wrong")
         }
@@ -111,14 +72,6 @@ export async function GetSingleBlogRequest(id) {
         store.dispatch(HideLoader())
         if (response.status === 200 && response.data['status'] === "success") {
             store.dispatch(SetBlogView(response.data['data']))
-            // if (result.data['data'][0]['Rows'].length > 0) {
-            //     // store.dispatch(SetBrandList(result.data['data'][0]['Rows']))
-            //     // store.dispatch(SetBrandListTotal(result.data['data'][0]['Total'][0]['count']))
-            // } else {
-            //     // store.dispatch(SetBrandList([]))
-            //     // store.dispatch(SetBrandListTotal(0))
-            //     ErrorToast("No Data Found")
-            // }
         } else {
             ErrorToast("Something Went Wrong")
         }

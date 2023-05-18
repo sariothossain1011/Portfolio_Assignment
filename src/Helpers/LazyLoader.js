@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react'
-
 const LazyLoader = () => {
     return (
         <Fragment>

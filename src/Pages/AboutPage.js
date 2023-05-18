@@ -1,10 +1,17 @@
-import React from 'react'
-import About from '../Conponents/About/About'
-
+import React, { Fragment, Suspense, lazy } from 'react'
+import LazyLoader from '../Helpers/LazyLoader'
+const About = lazy(()=>import("../Components/About/About"))
 const AboutPage = () => {
   return (
-    <About />
+    <Fragment>
+      <Suspense lazy={<LazyLoader/>}>
+        <About/>
+      </Suspense>
+    </Fragment>
+    
   )
 }
 
 export default AboutPage
+
+{/* <About /> */}

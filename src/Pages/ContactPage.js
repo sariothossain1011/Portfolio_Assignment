@@ -1,9 +1,15 @@
-import React from 'react'
-import Contact from '../Conponents/Contact/Contact'
+import React, { Fragment, Suspense, lazy } from 'react'
+import LazyLoader from '../Helpers/LazyLoader'
+const Contact = lazy(()=>import("../Components/Contact/Contact"))
+
 
 const ContactPage = () => {
   return (
-    <Contact />
+    <Fragment>
+      <Suspense lazy={<LazyLoader/>}>
+      <Contact />
+      </Suspense>
+    </Fragment>
   )
 }
 

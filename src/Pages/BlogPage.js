@@ -1,9 +1,13 @@
-import React from 'react'
-import BlogsList from '../Conponents/blogs/BlogsList'
-
+import React, { Fragment, Suspense ,lazy} from 'react';
+import LazyLoader from '../Helpers/LazyLoader';
+const BlogsList = lazy(()=>import("../Components/blogs/BlogsList"));
 const BlogPage = () => {
   return (
-    <BlogsList />
+    <Fragment>
+      <Suspense lazy={<LazyLoader/>}>
+      <BlogsList />
+      </Suspense>
+    </Fragment>
   )
 }
 
