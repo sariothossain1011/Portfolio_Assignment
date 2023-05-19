@@ -1,7 +1,7 @@
 import axios from 'axios';
 import store from '../Redux/store/store';
 import { HideLoader, ShowLoader } from '../Redux/state-slice/settings-slice';
-import { ErrorToast } from '../Helpers/Validation';
+import { ErrorToast, SuccessToast } from '../Helpers/Validation';
 import { SetPortfolioView, SetPortfoliosList } from '../Redux/state-slice/portfolios-slice';
 import { BASE_URL } from '../Helpers/config';
 import { SetBlogView, SetBlogsList } from '../Redux/state-slice/blogs-slice';
@@ -83,3 +83,20 @@ export async function GetSingleBlogRequest(id) {
 }
 
 
+export async function CVDownloadRequest() {
+    try {
+        store.dispatch(ShowLoader())
+        let URL = `${BASE_URL}cvDownload`
+        const response = await axios.get(URL)
+        store.dispatch(HideLoader())
+        if (response.status === 200 && response.data['status'] === "success") {
+            SuccessToast("CV Download Successfully")
+        } else {
+            ErrorToast("Something Went Wrong")
+        }
+    }
+    catch (e) {
+        ErrorToast("Something Went Wrong")
+        store.dispatch(HideLoader())
+    }
+}

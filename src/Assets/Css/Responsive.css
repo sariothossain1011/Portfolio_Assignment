@@ -48,6 +48,7 @@
     }
     .home-body,.section-body,.error-body{
         padding-left: 0px;
+        height: 100vh;
 
     }
     .circular-items{
@@ -91,7 +92,7 @@
         grid-template-columns: auto auto;
     }
     .home-items{
-        padding: 130px 20px;
+        padding: 120px 5px;
 
     
     }
@@ -114,6 +115,15 @@
         width: 100%;
         border-radius: 5px;
         height: 180px;
+    }
+    .home-title{
+        font-size: 40px;
+        font-weight: 700;
+    }
+    .home-title .span {
+        display: block;
+        font-size: 50px;
+        font-weight: 700;
     }
 
 

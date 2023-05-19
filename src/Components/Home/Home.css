@@ -10,7 +10,7 @@
 
 .home-items {
     color: #fff;
-    padding:180px 30px;
+    padding:150px 80px;
     text-align: center;
     margin: auto 0;
     background: rgb(0,0,0,0.9) url('../../Assets/Image/home-image.jpg');
@@ -19,19 +19,18 @@
     background-position: center;
     background-blend-mode: darken;
     height: 100vh;
+    height: 100%;
+    width: 100%;
     z-index: -1111;
 }
 .text-section {
     color: #fff;
-    padding: 15px 20px;
+    padding: 10px 20px;
+}
+.text-section p{
+    margin-top: 10px;
 }
 
-.text-section h2 {
-    padding-bottom: 20px;
-    font-size: 50px;
-    font-weight: 600;
-    color: #79b530;
-}
 
 
 

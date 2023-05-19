@@ -1,34 +1,35 @@
-import React from "react";
 import { MdDownload } from "react-icons/md";
-import { useTypewriter, Cursor } from "react-simple-typewriter";
+import { Typewriter } from "react-simple-typewriter";
 import SocialMediaIcon from "../Common/SocialMediaIcon";
+import CV from "../../Assets/Image/github-sariothossain.pdf";
+
 const Home = () => {
-  const [text] = useTypewriter({
-    words: ["Sariot Hossain ", "a Web Designer ", "a Developer "],
-    loop: {},
-    typeSpeed: 100,
-    delaySpeed: 80,
-    cursor: true,
-    // cursorStyle={{ position: "absolute", top: "0", left: "10px" }}
-    // cursorBlinking:false,
-  });
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = CV;
+    link.download = "sariot-hossain.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   return (
     <div className="home-body">
       <div className="home-items">
         <div className="text-section">
-          <h1>
-            I am{" "}
-            <span style={{ fontWeight: "bold", color: "#4bffa5" }}>{text}</span>
-            <Cursor
-              blinkSpeed={500}
-              cursorStyle="|"
-              style={{
-                position: "absolute",
-                top: 0,
-                left: 0,
-                zIndex: 9999,
-              }}
-            />
+          <h1 className="title home-title">
+            <span className="span">Hi, I Am</span>{' '}
+            <span style={{ color: '#4bffa5', fontWeight: 'bold' }}>
+              <Typewriter
+               
+                words={["Sariot Hossain"," A Web Developer", " A Web Designer"]}
+                loop={100}
+                cursor
+                cursorStyle="|"
+                typeSpeed={100}
+                deleteSpeed={50}
+                delaySpeed={1000}
+              />
+            </span>
           </h1>
           <p data-aos="zoom-in" data-aos-duration="1500">
             I am a skilled Full Stack Web Developer and Web Application
@@ -53,7 +54,7 @@ const Home = () => {
             data-aos="fade-left"
             data-aos-duration="1500"
           >
-            <button type="submit">
+            <button type="submit" onClick={handleDownload}>
               <MdDownload className="download-icon" /> Download CV
             </button>
           </div>
