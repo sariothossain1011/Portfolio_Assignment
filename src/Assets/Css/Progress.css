@@ -4,11 +4,12 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    min-height: 85vh;
+    min-height: 100vh;
 }
 .LoadingOverlay {
     position:absolute;
     display:block;
+    width: 100%;
     height: 100%;
     top: 0;
     left: 0;
@@ -18,6 +19,65 @@
     z-index: 500000 !important;
     background-color: #040b1a
 }
+.main-ring{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 350px;
+    text-align: center;
+}
+.sub-ring{
+    width: 200px;
+    height: 200px;
+    border: 0px solid #040b1a;
+    border-radius: 50%;
+    position: absolute;
+
+}
+.sub-ring:nth-child(1){
+    border-right-width: 8px;
+    border-color: rgb(116, 6, 155);
+    animation: rotate1 2s linear infinite;
+}
+.sub-ring:nth-child(2){
+    border-right-width: 8px;
+    border-color: rgb(67, 216, 169);
+    animation: rotate2 2s linear infinite;
+}
+.sub-ring:nth-child(3){
+    border-right-width: 8px;
+    border-color: rgb(21, 211, 15);
+    animation: rotate3 2s linear infinite;
+}
+@keyframes rotate1 {
+    0%{
+        transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+    }
+    100%{
+        transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+    }
+}
+
+@keyframes rotate2 {
+    0%{
+        transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+    }
+    100%{
+        transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+    }
+}
+
+@keyframes rotate3 {
+    0%{
+        transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+    }
+    100%{
+        transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+    }
+}
+
+
 .Line-Progress .indeterminate {
     background-color: var(--bs-dark);
 }

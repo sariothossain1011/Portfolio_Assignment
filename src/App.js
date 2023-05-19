@@ -29,6 +29,7 @@ const App = () => {
           <Route path="/blogs/:id" element={<SingleBlogPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="*" element={<ErrorPage />} />
+          <Route path="/load" element={<FullScreenLoader />} />
         </Routes>
       </BrowserRouter>
       <FullScreenLoader />

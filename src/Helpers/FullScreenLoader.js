@@ -7,7 +7,11 @@ const FullScreenLoader = () => {
       <div className={loader+"LoadingOverlay"}>
         <div className="Line-Progress">
           <div className="indeterminate">
-            
+            <div className='main-ring'>
+              <div className='sub-ring'></div>
+              <div className='sub-ring'></div>
+              <div className='sub-ring'></div>
+            </div>
           </div>
         </div>
       </div>
