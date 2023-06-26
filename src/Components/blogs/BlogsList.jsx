@@ -63,11 +63,11 @@ const BlogsList = () => {
                         data-aos-anchor-placement="center-bottom"
                         data-aos-duration="1500"
                       >
-                        <Link to={`/blogs/${item._id}`} target="">
+                        <Link to={`/blogs/${item._id}`} target="" className="text-decoration-none text-white fs-4 py-5">
                           Details{item.subject}
                         </Link>
 
-                        <div className="row">
+                        <div className="row py-2 mt-2 fs-5">
                           <div className="col-4">10:11:2022</div>
                           <div className="col-8 blog-icons">
                             <span>
