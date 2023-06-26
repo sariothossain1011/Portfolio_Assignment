@@ -25,10 +25,10 @@
     gap: 20px;
 }
 
-.address-section .icon{
+.contact-icon {
     color: #4bffa5;
     margin-right: 10px;
-    font-size: 25px;
+    font-size: 28px;
 }
 @media (max-width: 768px) {
     .name-email {

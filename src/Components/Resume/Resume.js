@@ -1,5 +1,4 @@
-
-import { FcGraduationCap } from "react-icons/fc";
+import { FaGraduationCap } from "react-icons/fa";
 import { IoCodeWorkingSharp } from "react-icons/io5";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
@@ -7,7 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
-import "./CertificateSlider.css"
+import "./CertificateSlider.css";
 import { EffectCoverflow, Pagination } from "swiper";
 const skill = require("./Skill.json");
 const education = require("./Education.json");
@@ -19,36 +18,39 @@ const Resume = () => {
     <div className="section-body">
       <div className="section-items">
         <div className="row">
-          <h1
-            className="title"
-            data-aos="fade-up"
-            data-aos-anchor-placement="center-bottom"
-            data-aos-duration="1500"
-          >
-            RESUME
-          </h1>
-          <div className="col-md-12 education">
+          <div className="triangle-style py-5">
             <h2
+              className="py-5"
               data-aos="fade-up"
               data-aos-anchor-placement="center-bottom"
               data-aos-duration="1500"
             >
-              <FcGraduationCap className="education-icon" /> Educational
-              Qualifications
+              RESU<span className="title-underline">ME</span>
+            </h2>
+          </div>
+          <div className="col-md-12 education ">
+            <h2
+              className="py-5 fs-1"
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom"
+              data-aos-duration="1500"
+            >
+              <FaGraduationCap className="education-experience-icons " />{" "}
+              Educational Qualification
             </h2>
             {education ? (
               education.map((item, index) => {
                 return (
                   <div
-                    className="row"
+                    className="row resume-radius"
                     data-aos="fade-up"
                     data-aos-anchor-placement="center-bottom"
                     data-aos-duration="1500"
                   >
-                    <div className="col-md-4">
-                      <h2>{item.date}</h2>
+                    <div className="col-md-4 top-decrease">
+                      <h2 cb>{item.date}</h2>
                     </div>
-                    <div className="col-md-8">
+                    <div className="col-md-8 top-decrease ">
                       <h2>{item.subject}</h2>
                       <h4>{item.board}</h4>
                       <h5>Result : {item.result}</h5>
@@ -63,25 +65,27 @@ const Resume = () => {
           </div>
           <div className="col-md-12">
             <h2
+              className="py-5 fs-1"
               data-aos="fade-up"
               data-aos-anchor-placement="center-bottom"
               data-aos-duration="1500"
             >
-              <IoCodeWorkingSharp /> Working Experience
+              <IoCodeWorkingSharp className="education-experience-icons" />{" "}
+              Working Experience
             </h2>
             {work ? (
               work.map((item, index) => {
                 return (
                   <div
-                    className="row"
+                    className="row resume-radius"
                     data-aos="fade-up"
                     data-aos-anchor-placement="center-bottom"
                     data-aos-duration="1500"
                   >
-                    <div className="col-md-4">
+                    <div className="col-md-4 top-decrease">
                       <h2>{item.date}</h2>
                     </div>
-                    <div className="col-md-8">
+                    <div className="col-md-8 top-decrease">
                       <h2>{item.subject}</h2>
                       <h4>{item.company}</h4>
                       <p>{item.info}</p>
@@ -94,13 +98,16 @@ const Resume = () => {
             )}
           </div>
           <div className="col-md-12 skill-section py-4">
-            <h1
-              data-aos="fade-up"
-              data-aos-anchor-placement="center-bottom"
-              data-aos-duration="1500"
-            >
-              SKILL <span>POINT</span>
-            </h1>
+            <div className="triangle-style py-5">
+              <h2
+                className="py-5"
+                data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom"
+                data-aos-duration="1500"
+              >
+                SKILL <span className="title-underline">POINT</span>
+              </h2>
+            </div>
             <div className="circular-items">
               {skill ? (
                 skill.map((item, index) => {
@@ -135,13 +142,16 @@ const Resume = () => {
           </div>
 
           <div className="col-md-12 cerfificate-section py-4">
-            <h1
-              data-aos="fade-up"
-              data-aos-anchor-placement="center-bottom"
-              data-aos-duration="1500"
-            >
-              MY <span>CERTIFICATE</span>
-            </h1>
+            <div className="triangle-style py-5">
+              <h2
+                className="py-5"
+                data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom"
+                data-aos-duration="1500"
+              >
+                MY CERTIFI<span className="title-underline">CATE</span>
+              </h2>
+            </div>
             <div
               className="pt-2"
               data-aos="fade-up"

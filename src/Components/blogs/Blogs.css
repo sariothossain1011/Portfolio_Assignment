@@ -1,3 +1,5 @@
+
+
 .blog-single-image img {
     width: 100%;
     height: 100vh;
@@ -98,33 +100,35 @@
     font-size: 22px;
 }
 
-@media (max-width:1200px){
-    .portfolio-single-image img{
+@media (max-width:1200px) {
+    .portfolio-single-image img {
         width: 100%;
         height: 600px;
     }
 }
 
 
-@media (max-width:900px){
-    .portfolio-single-image img{
+@media (max-width:900px) {
+    .portfolio-single-image img {
         width: 100%;
         height: 400px;
     }
 }
 
-@media (max-width:600px){
-    .portfolio-single-image img{
+@media (max-width:600px) {
+    .portfolio-single-image img {
         width: 100%;
         height: 300px;
     }
 }
-@media (max-width:450px){
-    .portfolio-single-image img{
+
+@media (max-width:450px) {
+    .portfolio-single-image img {
         width: 100%;
         height: 250px;
     }
-    .blogs-item img{
+
+    .blogs-item img {
         width: 100%;
         height: 250px;
     }

@@ -34,14 +34,17 @@ const BlogsList = () => {
       <div className="section-body">
         <div className="section-items">
           <div className="row">
-            <div className="col-md-12">
-              <h1
-                data-aos="fade-up"
-                data-aos-anchor-placement="center-bottom"
-                data-aos-duration="1500"
-              >
-                BLOGS
-              </h1>
+            <div className="col-md-12 ">
+              <div className="triangle-style py-5">
+                <h2
+                  className="py-5"
+                  data-aos="fade-up"
+                  data-aos-anchor-placement="center-bottom"
+                  data-aos-duration="1500"
+                >
+                  BLOGS
+                </h2>
+              </div>
               <div className="row">
                 {BlogsData.slice(start, end).map((item, index) => {
                   return (

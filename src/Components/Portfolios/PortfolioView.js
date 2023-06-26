@@ -42,9 +42,9 @@ const PortfolioView = () => {
               </div>
               <div className="">
                 {data.featureDetails ? (
-                  data.featureDetails.map((feature) => (
+                  data.featureDetails.map((feature,i) => (
                     <div className="pt-4">
-                      <h4 className="pb-2">{feature.featureTitle}</h4>
+                      <p className="pb-2 fs-2">{feature.featureTitle}</p>
                       <p className="fs-5">{feature.subDetails}</p>
                     </div>
                   ))

@@ -1,10 +1,10 @@
-import React, { Fragment} from "react";
+import React, { Fragment } from "react";
 // Import Swiper React components
 import SwiperCore, { Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import "./AboutSwiper.css"
+import "./AboutSwiper.css";
 // import required modules
 import Star from "../Common/Star";
 const howIDo = require("./WhatIDo.json");
@@ -18,14 +18,16 @@ const About = () => {
         <div className="section-items">
           <div className="about-body">
             <div className="row py-3">
-              <h1
-                className="title"
-                data-aos="fade-up"
-                data-aos-anchor-placement="center-bottom"
-                data-aos-duration="1500"
-              >
-                ABOUT <span className="title-underline">ME</span>
-              </h1>
+              <div className="triangle-style py-5 ">
+                <h2
+                  className="py-5 "
+                  data-aos="fade-up"
+                  data-aos-anchor-placement="center-bottom"
+                  data-aos-duration="1500"
+                >
+                  ABOUT <span className="title-underline">ME</span>
+                </h2>
+              </div>
               <div
                 className="col-md-8"
                 data-aos="fade-up"
@@ -75,9 +77,11 @@ const About = () => {
               </div>
             </div>
             <div className="row py-3">
-              <h1 className="title">
+            <div className="triangle-style py-5 ">
+              <h2 className="py-5">
                 What I <span className="title-underline">Do</span>?
-              </h1>
+              </h2>
+              </div>
               <div className="col-md-12 py-3">
                 <div className="box">
                   <div className="row">
@@ -115,10 +119,11 @@ const About = () => {
               data-aos-anchor-placement="center-bottom"
               data-aos-duration="1500"
             >
-              <div>
-                <h1>
+              <div className="triangle-style py-5 ">
+
+                <h2 className="py-5">
                   Client <span>review</span>
-                </h1>
+                </h2>
               </div>
               <div className="col-md-12 ">
                 <Swiper

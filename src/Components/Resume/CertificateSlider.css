@@ -1,6 +1,6 @@
 /* Customize pagination bullet */
 .swiper-pagination-bullet {
-    
+
   width: 12px;
   height: 12px;
   background-color: #ccc;
@@ -40,4 +40,30 @@
 }
 
 /* skill section */
+.education-experience-icons{
+  font-size: 80px;
+  color: #24cb77;
+}
 
+.resume-radius {
+  border-left: 2px solid #6c6b6be9;
+  margin-top: -2px;
+  padding: 0 0 20px 20px;
+  position: relative;
+}
+
+.resume-radius::before {
+  background: #040b1a;
+  border: 3px solid #6c6b6be9;
+  border-radius: 50px;
+  content: "";
+  height: 22px;
+  left: -13px;
+  position: absolute;
+  top: 0;
+  width: 22px;
+}
+
+.top-decrease {
+  margin-top: -18px;
+}

@@ -31,27 +31,37 @@ const Contact = () => {
         }
       );
   };
+  // call system
+
+  const phoneNumber = "0881881286293";
+
+  const handlePhoneClick = () => {
+    window.location.href = `tel:${phoneNumber}`;
+  };
   return (
     <div className="section-body">
       <div className="section-items">
-        <h1
-          className="title"
+      <div className="triangle-style py-5">
+        <h2
+          className="py-5"
           data-aos="fade-up"
           data-aos-anchor-placement="center-bottom"
           data-aos-duration="1500"
         >
           Contact <span className="title-underline"> me</span>
-        </h1>
+        </h2>
+        </div>
         <div className="row pt-5">
           <div className="col-md-5 address-section">
-            <h2
+            <h1
+            className="py-4"
               data-aos="fade-up"
               data-aos-anchor-placement="center-bottom"
               data-aos-duration="1500"
             >
               {" "}
               Address
-            </h2>
+            </h1>
             <div
               className="item"
               data-aos="fade-up"
@@ -59,14 +69,23 @@ const Contact = () => {
               data-aos-duration="1500"
             >
               <h5>
-                <ImLocation className="icon" /> Bharua Khali, Cox's Bazar,
-                Bangladesh
+                <ImLocation className="contact-icon" /> Bharua Khali, Cox's
+                Bazar, Bangladesh
               </h5>
               <h5>
-                <BsFillTelephoneOutboundFill className="icon" /> 0881881286293
+                <a href={`tel:${phoneNumber}`} onClick={handlePhoneClick} className="text-decoration-none text-white">
+                  <BsFillTelephoneOutboundFill className="contact-icon" />{" "}
+                  {phoneNumber}
+                </a>
               </h5>
               <h5>
-                <MdEmail className="icon" /> sariothossain1011@gmail.com
+                <a
+                  href="mailto:sariothossain1011@gmail.com"
+                  className="text-decoration-none text-white"
+                >
+                  <MdEmail className="contact-icon" />{" "}
+                  sariothossain1011@gmail.com
+                </a>
               </h5>
             </div>
             <div
@@ -74,17 +93,18 @@ const Contact = () => {
               data-aos-anchor-placement="center-bottom"
               data-aos-duration="1500"
             >
-              <SocialMediaIcon className="icon" />
+              <SocialMediaIcon />
             </div>
           </div>
           <div className="col-md-7 email-section">
-            <h2
+            <h1
+            className="py-4"
               data-aos="fade-up"
               data-aos-anchor-placement="center-bottom"
               data-aos-duration="1500"
             >
               Send Email
-            </h2>
+            </h1>
             <form
               ref={form}
               onSubmit={sendEmail}
