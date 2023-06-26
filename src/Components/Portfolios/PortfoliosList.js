@@ -47,7 +47,7 @@ const PortfoliosList = () => {
                       data-aos-duration="1500"
                     >
                       <figure>
-                        <img src={item.image} alt="portfolio-Img.." />
+                        <img src={item.image} alt="portfolio-Img.."  className="portfolio-img"/>
                       </figure>
                       <div
                         data-aos="fade-up"

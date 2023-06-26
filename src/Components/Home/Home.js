@@ -17,11 +17,14 @@ const Home = () => {
       <div className="home-items">
         <div className="text-section">
           <h1 className="title home-title">
-            <span className="span">Hi, I Am</span>{' '}
-            <span style={{ color: '#4bffa5', fontWeight: 'bold' }}>
+            <span className="span">Hi, I Am</span>{" "}
+            <span style={{ color: "#4bffa5", fontWeight: "bold" }}>
               <Typewriter
-               
-                words={["Sariot Hossain"," A Web Developer", " A Web Designer"]}
+                words={[
+                  "Sariot Hossain",
+                  " A Web Developer",
+                  " A Web Designer",
+                ]}
                 loop={100}
                 cursor
                 cursorStyle="|"
@@ -53,8 +56,9 @@ const Home = () => {
             className="button-section"
             data-aos="fade-left"
             data-aos-duration="1500"
+            onClick={handleDownload}
           >
-            <button type="submit" onClick={handleDownload}>
+            <button type="submit">
               <MdDownload className="download-icon" /> Download CV
             </button>
           </div>

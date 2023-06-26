@@ -28,10 +28,10 @@ const PortfolioView = () => {
               <h2 className="mt-3">{data.name}</h2>
               <div className="row my-4">
                 <div className="button col-md-3">
-                  <Link to="" target="">
+                  <a href={data.liveLink} target="_blank">
                     <BiLink className="button-icon"/> 
                      Live Link
-                  </Link>
+                  </a>
                 </div>
                 <div className="button col-md-6">
                   <Link to="" target="">
@@ -40,13 +40,12 @@ const PortfolioView = () => {
                   </Link>
                 </div>
               </div>
-              <h2>Features</h2>
               <div className="">
                 {data.featureDetails ? (
                   data.featureDetails.map((feature) => (
                     <div className="pt-4">
                       <h4 className="pb-2">{feature.featureTitle}</h4>
-                      <h6>{feature.subDetails}</h6>
+                      <p className="fs-5">{feature.subDetails}</p>
                     </div>
                   ))
                 ) : (

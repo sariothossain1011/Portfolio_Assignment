@@ -80,6 +80,10 @@
     .circular-items{
         grid-template-columns: auto auto auto;
     }
+    .portfolio-img{
+        width: 100%;
+        height: 300px;
+    }
 
     
 }
