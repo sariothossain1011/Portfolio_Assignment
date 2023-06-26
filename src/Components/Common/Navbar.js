@@ -22,7 +22,9 @@ const Navbar = () => {
       <div className="nav-section sidebar">
         <nav>
           <div className="img-section">
+            <figure>
             <img src={Profile} alt="" />
+            </figure>
           </div>
 
           <div className="navbar-intro">
