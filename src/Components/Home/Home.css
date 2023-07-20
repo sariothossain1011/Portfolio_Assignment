@@ -69,3 +69,10 @@
 
 
 /* HOME STYLE SECTION END */
+
+@media (max-width:1000px){
+    .home-body {
+        padding-left: 0px;
+        min-height: 100vh;
+    }
+}
