@@ -17,7 +17,7 @@
     bottom: 0;
     cursor: pointer;
     z-index: 500000 !important;
-    background-color: #040b1a
+    background-color: #040b1a;
 }
 .main-ring{
     position: relative;
@@ -79,7 +79,7 @@
 
 
 .Line-Progress .indeterminate {
-    background-color: var(--bs-dark);
+    background-color: #17b978;
 }
 .Line-Progress .indeterminate:before {
        z-index: -100 !important;

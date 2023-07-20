@@ -64,7 +64,7 @@ const BlogsList = () => {
                         data-aos-duration="1500"
                       >
                         <Link to={`/blogs/${item._id}`} target="" className="text-decoration-none text-white fs-4 py-5">
-                          Details{item.subject}
+                          {item.subject}
                         </Link>
 
                         <div className="row py-2 mt-2 fs-5">
