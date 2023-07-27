@@ -1,13 +1,13 @@
 import { MdDownload } from "react-icons/md";
 import { Typewriter } from "react-simple-typewriter";
 import SocialMediaIcon from "../Common/SocialMediaIcon";
-import CV from "../../Assets/Image/github-sariothossain.pdf";
+import CV from "../../Assets/Image/sariot-hossain-resume.pdf";
 
 const Home = () => {
   const handleDownload = () => {
     const link = document.createElement("a");
     link.href = CV;
-    link.download = "sariot-hossain.pdf";
+    link.download = "sariot-hossain-resume.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

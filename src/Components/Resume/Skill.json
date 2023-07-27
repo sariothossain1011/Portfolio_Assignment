@@ -98,8 +98,13 @@
   },
   {
     "name": "PYTHON",
-    "value": "50%",
-    "value1": "50"
+    "value": "75%",
+    "value1": "75"
+  },
+  {
+    "name": "C",
+    "value": "75%",
+    "value1": "75"
   },
   {
     "name": "JAVA",
