@@ -161,7 +161,7 @@ const Resume = () => {
               "After overcoming many obstacles and dedicating countless hours of
               hard work, I am ecstatic to announce that I have earned my
               certificate. It is a true testament to my determination and
-              passion for [insert subject here]."
+              passion for passion for Web Development."
             </div>
             <div className="cerfificate-item pt-3">
               <Swiper
