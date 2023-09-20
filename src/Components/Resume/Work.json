@@ -1,14 +1,22 @@
 [
   {
-    "date": "2019 - 2020",
+    "date": "Oct 2023 - ",
     "subject": "Full stack Web Developer",
-    "company": "Owner Company",
-    "info": "Experienced Full Stack Web Developer with a strong focus on MERN stack development. Proficient in creating dynamic websites and web applications using MEAN stack. Committed to delivering high-quality projects on a daily basis, following guidelines and ensuring accurate information."
+    "company": "ICT Bangladesh",
+    "info": "I am working as a software engineer with the ICT Bangladesh team."
   },
   {
-    "date": "2020 - 2022",
-    "subject": "Web Design",
-    "company": "Owner Company",
-    "info": "As a web designer, I have been working at my own company, utilizing my expertise in creating visually appealing and user-friendly website designs. I consistently incorporate the latest design concepts and industry trends into my work, ensuring client satisfaction and delivering successful design solutions."
+    "date": "July 2023 - Oct 2023",
+    "subject": "Full stack Web Developer",
+    "company": "College Project (JICA)",
+    "info": "I served as the Project Team Leader at our college, overseeing the development of two crucial applications: a Library Management App and an Alumni Tracker App."
+  },
+  {
+    "date": "Oct 2021 - ",
+    "subject": "MERN stack Developer",
+    "company": "Ostad ,Bangladesh",
+    "info": "Complete Web Development Course. Learn everything it takes to get a job as a junior MERN developer from scratch · Unlimited Support · Special Job Placement Coach.",
+    "courseTitle": "I learned from this course:",
+    "learnTechnology":"HTML5, CSS, Bootstrap, Javascript, React js, Redux js , Nodejs, Express js, Mongodb, Rest API and Postman."
   }
 ]

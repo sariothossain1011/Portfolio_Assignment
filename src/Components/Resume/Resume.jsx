@@ -89,6 +89,13 @@ const Resume = () => {
                       <h2>{item.subject}</h2>
                       <h4>{item.company}</h4>
                       <p>{item.info}</p>
+
+                      {item.courseTitle && (
+                        <h6>{item.courseTitle}</h6>
+                      )}
+                      {item.learnTechnology && (
+                        <p>{item.learnTechnology}</p>
+                      )}
                     </div>
                   </div>
                 );
