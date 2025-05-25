@@ -1,22 +1,27 @@
+
 [
   {
-    "date": "Oct 2023 - ",
-    "subject": "Software Engineer",
+    "date": "Dec 2023 - Nov 2024",
+    "subject": "Junior Web Developer",
+    "company": "Zorg IT Group",
+    "info": "Worked as a Junior Web Developer at Zorg IT Group, contributing to the design, development, and maintenance of responsive and user-friendly web applications. Collaborated with senior developers to implement front-end and back-end features using modern web technologies."
+  },
+  {
+    "date": "Oct 2023 - Dec 2023",
+    "subject": "Web Developer",
     "company": "ICT Bangladesh",
-    "info": "I am working as a Software Engineer with the ICT Bangladesh team."
+    "info": "Served as a Web Developer at ICT Bangladesh, where I was responsible for developing and maintaining dynamic websites and web-based tools. Worked closely with the development team to ensure quality, performance, and security standards."
   },
   {
     "date": "July 2023 - Oct 2023",
-    "subject": "Full stack Web Developer",
-    "company": "College Project (JICA)",
-    "info": "I served as the Project Team Leader at our college, overseeing the development of two crucial applications: a Library Management App and an Alumni Tracker App."
+    "subject": "React Native Developer (Team Leader)",
+    "company": "College Project (JICA Initiative)",
+    "info": "Led a college project under the JICA initiative as the React Native Developer and Team Leader. Oversaw the complete development lifecycle of two key applications: a Library Management System and an Alumni Tracking App. Coordinated team efforts, managed version control, and ensured timely delivery of functional prototypes."
   },
   {
-    "date": "Oct 2021 - ",
-    "subject": "MERN stack Developer",
-    "company": "Ostad ,Bangladesh",
-    "info": "Complete Web Development Course. Learn everything it takes to get a job as a junior MERN developer from scratch · Unlimited Support · Special Job Placement Coach.",
-    "courseTitle": "I learned from this course:",
-    "learnTechnology":"HTML5, CSS, Bootstrap, Javascript, React js, Redux js , Nodejs, Express js, Mongodb, Rest API and Postman."
+    "date": "Oct 2021 - Dec 2022",
+    "subject": "MERN Stack Developer (Trainee)",
+    "company": "Ostad, Bangladesh",
+    "info": "Completed an intensive MERN Stack Web Development course at Ostad, designed to prepare candidates for junior-level developer roles. Received dedicated mentorship and career guidance, including job placement support."
   }
 ]

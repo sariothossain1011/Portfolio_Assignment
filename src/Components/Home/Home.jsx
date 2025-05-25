@@ -2,6 +2,11 @@ import { MdDownload } from "react-icons/md";
 import { Typewriter } from "react-simple-typewriter";
 import SocialMediaIcon from "../Common/SocialMediaIcon";
 import CV from "../../Assets/Image/sariot-hossain-resume.pdf";
+import About from "../About/About";
+import Resume from "../Resume/Resume";
+import PortfoliosPage from "../../Pages/PortfoliosPage";
+import BlogPage from "../../Pages/BlogPage";
+import ContactPage from "../../Pages/ContactPage";
 
 const Home = () => {
   const handleDownload = () => {
@@ -13,17 +18,18 @@ const Home = () => {
     document.body.removeChild(link);
   };
   return (
+ <>
     <div className="home-body">
       <div className="home-items">
         <div className="text-section">
           <h1 className="title home-title">
-            <span className="span">Hi, I Am</span>{" "}
+            <span className="span">Hi, I am</span>{" "}
             <span style={{ color: "#4bffa5", fontWeight: "bold" }}>
               <Typewriter
                 words={[
                   "Sariot Hossain",
-                  " A Web Developer",
-                  " A Web Designer",
+                  " a Junior Web Developer",
+                  " a Full Stack Web Designer",
                 ]}
                 loop={100}
                 cursor
@@ -35,14 +41,19 @@ const Home = () => {
             </span>
           </h1>
           <p data-aos="zoom-in" data-aos-duration="1500">
-            I am a skilled Full Stack Web Developer and Web Application
-            specialist, proficient in both front-end and back-end development.
-            With expertise in all stages of the development cycle, I excel at
-            creating dynamic websites. I am proficient in CSS3, Bootstrap,
-            Tailwind CSS, JavaScript ES6, Node.js, Express.js, and utilizing
-            libraries such as React.js and Redux. I have experience working with
-            MongoDB and implementing MongoDB Aggregation for efficient data
-            management.
+            I am a proficient Junior Web Developer and Web Application
+            Specialist with hands-on experience in both front-end and back-end
+            technologies. I bring expertise across the entire development
+            lifecycle, from planning and design to deployment and maintenance. I
+            specialize in building responsive, high-performance web applications
+            using modern tools and frameworks. My skill set includes CSS3,
+            Bootstrap, Tailwind CSS, JavaScript, Node.js, and Express.js,
+            alongside advanced front-end libraries such as React.js, Next.js,
+            and Redux. On the back end, I have solid experience working with
+            MongoDB and PostgreSQL, including the use of MongoDB Aggregation for
+            optimized data processing and management. I am passionate about
+            building clean, efficient code and delivering seamless user
+            experiences across platforms.
           </p>
 
           <div
@@ -62,17 +73,19 @@ const Home = () => {
               <MdDownload className="download-icon" /> Download CV
             </button>
           </div>
-          <div
+          {/* <div
             className="code"
             data-aos="fade-up"
             data-aos-anchor-placement="center-bottom"
             data-aos-duration="1500"
           >
             <span>" $ sudo pacman -S nodejs "</span>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
+
+ </>
   );
 };
 

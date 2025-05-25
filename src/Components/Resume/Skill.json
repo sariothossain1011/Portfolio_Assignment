@@ -47,8 +47,8 @@
   },
   {
     "name": "REACT NATIVE",
-    "value": "65%",
-    "value1": "65"
+    "value": "70%",
+    "value1": "70"
   },
 
   {
@@ -65,6 +65,11 @@
     "name": "MONGODB",
     "value": "90%",
     "value1": "90"
+  },
+    {
+    "name": "PostgreSQL",
+    "value": "60%",
+    "value1": "60"
   },
   {
     "name": "AGGREGATION",
@@ -87,11 +92,6 @@
     "value1": "60"
   },
   {
-    "name": "DATA STRUCTURE",
-    "value": "70%",
-    "value1": "70"
-  },
-  {
     "name": "OOPS",
     "value": "70%",
     "value1": "70"
@@ -108,17 +108,17 @@
   },
   {
     "name": "JAVA",
-    "value": "50%",
-    "value1": "50"
+    "value": "80%",
+    "value1": "80"
   },
   {
     "name": "C#",
     "value": "50%",
     "value1": "50"
   },
-  {
-    "name": "JAVA",
-    "value": "50%",
-    "value1": "50"
+    {
+    "name": "DATA STRUCTURE",
+    "value": "70%",
+    "value1": "70"
   }
 ]

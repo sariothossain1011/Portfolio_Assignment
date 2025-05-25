@@ -1,17 +1,24 @@
 [
   {
-    "date": "2018 - pending",
-    "subject": "Diploma engineering (CSE)",
+    "date": "2024 - Ongoing",
+    "subject": "Bachelor of Science in Computer Science and Engineering",
+    "board": "Southeast University, Bangladesh",
+    "result": "Result Pending",
+    "info": "An aspiring computer engineer currently pursuing a BSc in Computer Science and Engineering. Equipped with a strong foundation in computer science, mathematics, and engineering principles. Skilled in developing innovative solutions using modern computing techniques. Passionate about technology and continuously staying updated with the latest advancements. Eager to contribute to impactful projects and excel in the field of computer engineering."
+  },
+  {
+    "date": "2019 - 2023",
+    "subject": "Diploma in Computer Science and Technology (CST)",
     "board": "Bangladesh Technical Education Board (BTEB)",
-    "result": "pending",
-    "info": "Experienced computer engineer with a diploma in Computer Science Engineering, equipped with comprehensive knowledge in computer science, mathematics, and engineering concepts. Proficient in applying computing techniques to develop innovative solutions. Strong problem-solving skills and a passion for staying updated with emerging technologies. Seeking challenging opportunities to contribute to the field of computer engineering."
+    "result": "3.55 (out of 4.00)",
+    "info": "Successfully completed a comprehensive diploma program in Computer Science and Technology. Gained solid knowledge in programming, algorithms, systems analysis, and software development. Demonstrated problem-solving skills and the ability to work on practical computing projects. Committed to continuous learning and advancement in the tech industry."
   },
   {
     "date": "2018 - 2019",
-    "subject": "Secondary School Certificate (SSC)",
+    "subject": "Secondary School Certificate (SSC) – Science Stream",
     "board": "Board of Intermediate & Secondary Education, Chottogram",
-    "result": "4.28",
-    "info": "I hold a Secondary School Certificate from Mohammad Ilias Mia Chy High School, specializing in the Science stream. I successfully completed my SSC in 2019. I have a strong foundation in scientific principles and am eager to apply my knowledge and skills in a challenging and rewarding professional environment."
+    "result": "4.28 (out of 5.00)",
+    "info": "Graduated from Mohammad Ilias Mia Chy High School with a concentration in Science. Developed a foundational understanding of core scientific and mathematical concepts. Displayed strong academic performance and a keen interest in technology, which laid the groundwork for further studies in computer science and engineering."
   }
 
 ]

@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import Profile from "../../Assets/Image/sariot-hossain.jpg";
+import Profile from "../../Assets/Image/sariot_hossain.jpeg";
 import { AiOutlineHome } from "react-icons/ai";
 import { BiUser } from "react-icons/bi";
 import { HiOutlineDocument } from "react-icons/hi";
@@ -62,11 +62,9 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="nav-social-media-div">
-              <SocialMediaIcon />
+            <div className="fellow-me">Fellow Me :</div>
+            <SocialMediaIcon />
             </div>
-          <div className="nav-footer">
-            <p>&copy; {new Date().getFullYear()} sariot</p>
-          </div>
         </nav>
       </div>
     </>

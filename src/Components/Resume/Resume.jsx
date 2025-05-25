@@ -176,6 +176,10 @@ const Resume = () => {
                 grabCursor={true}
                 centeredSlides={true}
                 slidesPerView={"auto"}
+                  autoplay={{
+                    delay: 5000,
+                    disableOnInteraction: false,
+                  }}
                 coverflowEffect={{
                   rotate: 50,
                   stretch: 0,
@@ -183,7 +187,7 @@ const Resume = () => {
                   modifier: 1,
                   slideShadows: true,
                 }}
-                pagination={true}
+                // pagination={true}
                 modules={[EffectCoverflow, Pagination]}
                 className="mySwiper"
               >

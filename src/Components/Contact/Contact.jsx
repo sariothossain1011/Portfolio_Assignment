@@ -69,12 +69,11 @@ const Contact = () => {
               data-aos-duration="1500"
             >
               <h5>
-                <ImLocation className="contact-icon" /> Bharua Khali, Cox's
-                Bazar, Bangladesh
+                <ImLocation className="contact-icon"  /> Nikunja-2, Khilkhet, Dhaka, Bangladesh
               </h5>
               <h5>
                 <a href={`tel:${phoneNumber}`} onClick={handlePhoneClick} className="text-decoration-none text-white">
-                  <BsFillTelephoneOutboundFill className="contact-icon" />{" "}
+                  <BsFillTelephoneOutboundFill size={18} className="contact-icon" />{" "}
                   {phoneNumber}
                 </a>
               </h5>

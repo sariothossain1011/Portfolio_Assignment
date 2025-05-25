@@ -6,7 +6,9 @@
 }
 
 .home-items {
-    color: #fff;
+    color: var(--text-gray);
+    font-size: 18px;
+    font-weight: 400;
     padding: 150px 80px;
     text-align: center;
     margin: auto 0;
@@ -28,10 +30,11 @@
 
 .text-section p {
     margin-top: 10px;
+    color: var(--text-gray);
+    font-size: 18px;
+    font-weight: 400;
+    user-select: none;
 }
-
-
-
 
 .media-link-section {
     padding: 15px 0px;
