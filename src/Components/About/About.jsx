@@ -102,7 +102,7 @@ const About = () => {
                           >
                             <div className="row">
                               <div className="col-md-2">
-                                <img src={item.image} alt="" />
+                                <img src={item.image} alt="Resume" />
                               </div>
                               <div className="col-md-10">
                                 <h3>{item.subject}</h3>

@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import { Fragment } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Components/Home/Home";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -12,7 +12,6 @@ import ErrorPage from "./Pages/ErrorPage";
 import SinglePortfoliosPage from "./Pages/SinglePortfoliosPage";
 import SingleBlogPage from "./Pages/SingleBlogPage";
 import { ToastContainer } from "react-toastify";
-import FullScreenLoader from "./Helpers/FullScreenLoader";
 const App = () => {
   return (
     <Fragment>

@@ -2,11 +2,6 @@ import { MdDownload } from "react-icons/md";
 import { Typewriter } from "react-simple-typewriter";
 import SocialMediaIcon from "../Common/SocialMediaIcon";
 import CV from "../../Assets/Image/sariot-hossain-resume.pdf";
-import About from "../About/About";
-import Resume from "../Resume/Resume";
-import PortfoliosPage from "../../Pages/PortfoliosPage";
-import BlogPage from "../../Pages/BlogPage";
-import ContactPage from "../../Pages/ContactPage";
 
 const Home = () => {
   const handleDownload = () => {

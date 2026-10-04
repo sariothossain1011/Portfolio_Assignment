@@ -195,7 +195,7 @@ const Resume = () => {
                   certificate.map((item, index) => {
                     return (
                       <SwiperSlide>
-                        <a href={`${item.url}`} target="_blank">
+                        <a href={`${item.url}`}   target="_blank" rel="noreferrer">
                           <img src={`${item.url}`} />
                         </a>
                       </SwiperSlide>

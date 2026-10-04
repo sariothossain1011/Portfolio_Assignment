@@ -13,5 +13,3 @@ const AboutPage = () => {
 }
 
 export default AboutPage
-
-{/* <About /> */}

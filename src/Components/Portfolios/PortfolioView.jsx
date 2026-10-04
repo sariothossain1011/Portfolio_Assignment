@@ -27,7 +27,7 @@ const PortfolioView = () => {
               <h2 className="mt-3">{data.name}</h2>
               <div className="row my-4">
                 <div className="button col-md-3">
-                  <a href={data.liveLink} target="_blank">
+                  <a href={data.liveLink} target="_blank" rel="noreferrer">
                     <BiLink className="button-icon"/> 
                      Live Link
                   </a>
