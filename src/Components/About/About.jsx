@@ -102,7 +102,7 @@ const About = () => {
                           >
                             <div className="row">
                               <div className="col-md-2">
-                                <img src={item.image} alt="Resume" />
+                                <img src={item.image} alt="..." />
                               </div>
                               <div className="col-md-10">
                                 <h3>{item.subject}</h3>
@@ -151,7 +151,7 @@ const About = () => {
                           <div className="client-section">
                             <div className="image-name">
                               <div className="col-md-2 client-image">
-                                <img src={item.image} className="" />
+                                <img src={item.image} alt="..." />
                               </div>
                               <div className="col-md-10 client-name">
                                 <h3>{item.name}</h3>

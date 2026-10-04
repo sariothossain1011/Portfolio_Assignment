@@ -11,7 +11,7 @@ const BlogView = () => {
     (async () => {
       await GetSingleBlogRequest(id);
     })();
-  }, []);
+  }, [id]);
 
   const data = useSelector((state) => state.blogs.BlogView);
 

@@ -8,7 +8,7 @@ import "./Portfolios.css";
 
 const PortfoliosList = () => {
   const [currentPage, setCurrentPage] = useState(0);
-  const [pageSize, setPageSize] = useState(4);
+  const [pageSize] = useState(4);
   const portfoliosData = useSelector((state) => state.portfolios.PortfolioList);
 
   useEffect(() => {

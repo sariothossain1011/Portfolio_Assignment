@@ -10,7 +10,7 @@ import "./Blogs.css";
 
 const BlogsList = () => {
   const [currentPage, setCurrentPage] = useState(0);
-  const [pageSize, setPageSize] = useState(4);
+  const [pageSize] = useState(4);
 
   useEffect(() => {
     (async () => {

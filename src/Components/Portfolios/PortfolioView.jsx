@@ -12,7 +12,7 @@ const PortfolioView = () => {
     (async () => {
       await GetSinglePortfolioRequest(id);
     })();
-  }, []);
+  }, [id]);
   const data = useSelector((state) => state.portfolios.PortfolioView);
   return (
     <Fragment>
@@ -27,7 +27,7 @@ const PortfolioView = () => {
               <h2 className="mt-3">{data.name}</h2>
               <div className="row my-4">
                 <div className="button col-md-3">
-                  <a href={data.liveLink} target="_blank" rel="noreferrer">
+                  <a href={data.liveLink} rel="noopener noreferrer">
                     <BiLink className="button-icon"/> 
                      Live Link
                   </a>
