@@ -1,10 +1,7 @@
-import React, { useEffect } from "react";
-import { Link, useParams } from "react-router-dom";
+import { useEffect } from "react";
+import { useParams } from "react-router-dom";
 import { GetSingleBlogRequest } from "../../ApiServices/ApiService";
 import { useSelector } from "react-redux";
-import { BsFacebook, BsLinkedin, BsYoutube } from "react-icons/bs";
-import { VscGithub } from "react-icons/vsc";
-import { MdDownload } from "react-icons/md";
 import "./Blogs.css";
 import SocialMediaIcon from "../Common/SocialMediaIcon";
 const BlogView = () => {

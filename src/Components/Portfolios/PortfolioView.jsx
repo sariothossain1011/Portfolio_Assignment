@@ -4,7 +4,6 @@ import { GetSinglePortfolioRequest } from "../../ApiServices/ApiService";
 import { useSelector } from "react-redux";
 import { BiLink } from "react-icons/bi";
 import { MdVideoLibrary} from "react-icons/md";
-import { BsArrowLeft} from "react-icons/bs";
 import "./Portfolios.css";
 
 const PortfolioView = () => {

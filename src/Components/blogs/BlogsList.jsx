@@ -1,5 +1,5 @@
-import React, { Fragment, useEffect, useState } from "react";
-import { GetBlog, GetBlogsRequest } from "../../ApiServices/ApiService";
+import { useEffect, useState } from "react";
+import { GetBlogsRequest } from "../../ApiServices/ApiService";
 import { FaRegComment } from "react-icons/fa";
 import { AiOutlineEye } from "react-icons/ai";
 import FullScreenLoader from "../../Helpers/FullScreenLoader";
