@@ -74,7 +74,7 @@ const About = () => {
                 data-aos-anchor-placement="center-bottom"
                 data-aos-duration="1500"
               >
-                <h6>Name : Sariot hossain (sumon)</h6>
+                <h6>Name : Sariot hossain</h6>
                 <h6>Email : sariothossain1011@gmail.com</h6>
                 <h6>Age : {new Date().getFullYear() - 2003}</h6>
                 <h6>Nationality : Bangladeshi</h6>
