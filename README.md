@@ -1,4 +1,4 @@
-# Portfolio_Assignment
+# Professional Website
 
 A modern, responsive, and interactive personal professional website built with **React.js**. This project is designed to showcase professional experience, skills, projects, resume, blogs, contact information, and other career-related information through a clean and user-friendly interface.
 
