@@ -120,7 +120,7 @@ The project is designed to be scalable and maintainable, making it easy to add n
 
 ```text
 
-professionalwebsite-client/
+Portfolio_Assignment/
 
 │
 
@@ -212,7 +212,7 @@ npm --version
 
 ```bash
 
-git clone https://github.com/sariothossain1011/professionalwebsite-client.git
+git clone https://github.com/sariothossain1011/Portfolio_Assignment.git
 
 ```
 
@@ -387,7 +387,7 @@ git clone <repository-url>
 
 
 
-cd professionalwebsite-client
+cd Portfolio_Assignment
 
 
 
